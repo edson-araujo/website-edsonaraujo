@@ -1,0 +1,27 @@
+{
+  "Home": {
+    "title": "Hello world!",
+    "description": "This is a biiiiig description XD If you like this type content please subscribe to my channel",
+    "client": "CLIENT SIDEE"
+  },
+  
+  "Header": {
+    "Home": "Home",
+    "Sobre": "About",
+    "Projetos": "Projects",
+    "Currículo": "Resume",
+    "Links": "Links"
+  },
+    "SelectLanguage": {
+      "title": "Selecione o Idioma",
+      "english": "Inglês",
+      "french": "Francês",
+      "portuguese": "Português",
+      "spanish": "Espanhol",
+      "en": "Inglês",
+      "fr": "Francês",
+      "pt": "Português",
+      "es": "Espanhol"
+    }
+  
+}
