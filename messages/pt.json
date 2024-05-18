@@ -10,7 +10,13 @@
     "Sobre": "Sobre",
     "Projetos": "Projetos",
     "Currículo": "Currículo",
-    "Links": "Links"
+    "Links": "Links",
+    "ContactMe": "Contate-me",
+    "AltHome": "Home",
+    "AltAbout": "Mais sobre mim",
+    "AltPortfolio": "Trabalhos que fiz",
+    "AltResume": "Meu currículo profissional",
+    "AltLinks": "Mais informações sobre mim"
   },
 
   "SelectLanguage": {

@@ -10,8 +10,15 @@
     "Sobre": "About",
     "Projetos": "Projects",
     "Currículo": "Resume",
-    "Links": "Links"
+    "Links": "Links",
+    "ContactMe": "Contact Me",
+    "AltHome": "Home",
+    "AltAbout": "More about me",
+    "AltPortfolio": "Work I've done",
+    "AltResume": "My professional resume",
+    "AltLinks": "More information about me"
   },
+  
     "SelectLanguage": {
       "title": "Selecione o Idioma",
       "english": "Inglês",

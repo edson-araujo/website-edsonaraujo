@@ -4,6 +4,7 @@ import React, { FC, useEffect, useState } from "react";
 import ThemeToggle from "./ThemeToggle";
 import { DesktopNav } from "./header.desktop-nav";
 import { ProfileNav } from "./header.settings";
+import { MobileNav } from "./header.mobile-nav";
 
 export const Header: FC = () => {
   const [showNav, setShowNav] = useState(false);
@@ -22,6 +23,10 @@ export const Header: FC = () => {
       <div className="mx-auto flex h-full max-w-6xl grid-cols-2 items-center gap-1 px-4 md:grid md:gap-4 md:px-8">
         <DesktopNav />
         <ProfileNav showNav={showNav} />
+        <MobileNav showNav={showNav} setShowNav={setShowNav}/>
+        <div className="background pointer-events-none absolute inset-0 z-0 select-none ">
+          
+        </div>
       </div>
     </header>
   );

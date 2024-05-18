@@ -5,6 +5,7 @@ import { SiGithub } from 'react-icons/si';
 import { Link } from '../link';
 import DarkmodeIcon from '../darkmode-icon';
 import SelectLanguage from '../selectLanguage';
+import { useTranslations } from "next-intl";
 
 type ProfileNavProps = {
   showNav: boolean;
@@ -12,6 +13,7 @@ type ProfileNavProps = {
 
 export const ProfileNav: FC<ProfileNavProps> = ({ showNav }) => {
   const { theme, setTheme } = useTheme();
+  const t = useTranslations('Header');
 
   return (
     <nav className="z-10 ml-auto flex gap-1 pl-4">
@@ -42,7 +44,7 @@ export const ProfileNav: FC<ProfileNavProps> = ({ showNav }) => {
         href="mailto:edsonaraujo.dev@gmail.com"
         className="button-rainbow ml-4 hidden whitespace-nowrap px-4 py-1.5 text-sm font-medium tracking-tight text-gray-500 md:flex"
       >
-        Entrar em contato
+        {t('ContactMe')}
       </Link>
     </nav>
   );

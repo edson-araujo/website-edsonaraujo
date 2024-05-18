@@ -1,0 +1,33 @@
+{
+  "Home": {
+    "title": "Bonjour le monde",
+    "description": "Ceci est une très grande description, si vous aimez mon contenu, abonnez-vous à la chaîne XD",
+    "client": "Côté client"
+  },
+
+  "Header": {
+    "Home": "Accueil",
+    "Sobre": "À propos",
+    "Projetos": "Projets",
+    "Currículo": "CV",
+    "Links": "Liens",
+    "ContactMe": "Contactez-moi",
+    "AltHome": "Accueil",
+    "AltAbout": "Plus sur moi",
+    "AltPortfolio": "Travaux que j'ai réalisés",
+    "AltResume": "Mon CV professionnel",
+    "AltLinks": "Plus d'informations sur moi"
+  },
+
+  "SelectLanguage": {
+    "title": "Sélectionnez la langue",
+    "english": "Anglais",
+    "french": "Français",
+    "portuguese": "Portugais",
+    "spanish": "Espagnol",
+    "en": "Anglais",
+    "fr": "Français",
+    "pt": "Portugais",
+    "es": "Espagnol"
+  }
+}

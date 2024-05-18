@@ -1,0 +1,34 @@
+{
+    "Home": {
+      "title": "Hola mundo",
+      "description": "Esto es una gran descripción, si te gusta mi contenido, suscríbete al canal XD",
+      "client": "Lado del cliente"
+    },
+  
+    "Header": {
+      "Home": "Inicio",
+      "Sobre": "Sobre",
+      "Projetos": "Proyectos",
+      "Currículo": "Currículum",
+      "Links": "Enlaces",
+      "ContactMe": "Contáctame",
+      "AltHome": "Inicio",
+      "AltAbout": "Más sobre mí",
+      "AltPortfolio": "Trabajos que he hecho",
+      "AltResume": "Mi currículum profesional",
+      "AltLinks": "Más información sobre mí"
+    },
+  
+    "SelectLanguage": {
+      "title": "Seleccione el idioma",
+      "english": "Inglés",
+      "french": "Francés",
+      "portuguese": "Portugués",
+      "spanish": "Español",
+      "en": "Inglés",
+      "fr": "Francés",
+      "pt": "Portugués",
+      "es": "Español"
+    }
+  }
+  

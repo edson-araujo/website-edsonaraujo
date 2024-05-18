@@ -1,7 +1,8 @@
+// src/components/selectLanguage.tsx
 'use client';
 
 import React, { FC, useState, useEffect } from 'react';
-import { useRouter, usePathname, useSearchParams } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import Flag from 'react-world-flags';
 import {
@@ -9,60 +10,91 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu';
+} from '@radix-ui/react-dropdown-menu';
 
 const SelectLanguage: FC = () => {
   const router = useRouter();
   const pathname = usePathname();
-  const searchParams = useSearchParams();
   const t = useTranslations('SelectLanguage');
-  const [selectedLocale, setSelectedLocale] = useState(router.locale);
+
+  const getBrowserLocale = () => {
+    if (typeof navigator !== 'undefined' && navigator.language) {
+      const locale = navigator.language.split('-')[0];
+      return ['en', 'fr', 'pt', 'es'].includes(locale) ? locale : 'en';
+    }
+    return 'en';
+  };
+
+  const initialLocale = pathname.split('/')[1] || getBrowserLocale();
+  const [selectedLocale, setSelectedLocale] = useState(initialLocale);
 
   useEffect(() => {
-    setSelectedLocale(router.locale);
-  }, [router.locale]);
+    setSelectedLocale(initialLocale);
+  }, [initialLocale]);
 
   const changeLocale = (locale: string) => {
-    const newPathname = pathname.replace(/^\/(en|fr|pt|es)/, `/${locale}`);
-    router.push(`${newPathname}?${searchParams.toString()}`);
+    const basePathname =
+      pathname.startsWith('/en') ||
+      pathname.startsWith('/fr') ||
+      pathname.startsWith('/pt') ||
+      pathname.startsWith('/es')
+        ? pathname.replace(/^\/(en|fr|pt|es)/, '')
+        : pathname;
+    const newPathname = `/${locale}${basePathname}`;
+    router.push(newPathname);
     setSelectedLocale(locale);
   };
 
   const renderFlag = (locale: string) => {
     switch (locale) {
       case 'en':
-        return <Flag code="US" className="inline-block mr-2" width="20" />;
+        return <Flag code="US" className="inline-block" width="20" />;
       case 'fr':
-        return <Flag code="FR" className="inline-block mr-2" width="20" />;
+        return <Flag code="FR" className="inline-block" width="20" />;
       case 'pt':
-        return <Flag code="BR" className="inline-block mr-2" width="20" />;
+        return <Flag code="BR" className="inline-block" width="20" />;
       case 'es':
-        return <Flag code="ES" className="inline-block mr-2" width="20" />;
+        return <Flag code="ES" className="inline-block" width="20" />;
       default:
         return null;
     }
   };
 
   return (
-    <DropdownMenu>
-      <DropdownMenuTrigger>
-        <div className="flex items-center">
+    <DropdownMenu modal={false}>
+      <DropdownMenuTrigger className="cursor-pointer">
+        <div className="flex items-center justify-center p-2">
           {renderFlag(selectedLocale)}
-          <span>{t(selectedLocale)}</span>
         </div>
       </DropdownMenuTrigger>
-      <DropdownMenuContent>
-        <DropdownMenuItem onClick={() => changeLocale('en')}>
-          {renderFlag('en')} {t('english')}
+      <DropdownMenuContent
+        sideOffset={5}
+        align="center"
+        className="mt-2 w-12 border border-gray-800/10 dark:border-gray-800 bg-white/50 backdrop-blur dark:bg-gray-900/40 shadow-lg rounded-md"
+      >
+        <DropdownMenuItem
+          className="flex items-center justify-center p-2 hover:bg-gray-100 dark:hover:bg-gray-900 cursor-pointer"
+          onClick={() => changeLocale('en')}
+        >
+          {renderFlag('en')}
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => changeLocale('fr')}>
-          {renderFlag('fr')} {t('french')}
+        <DropdownMenuItem
+          className="flex items-center justify-center p-2 hover:bg-gray-100 dark:hover:bg-gray-900 cursor-pointer"
+          onClick={() => changeLocale('fr')}
+        >
+          {renderFlag('fr')}
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => changeLocale('pt')}>
-          {renderFlag('pt')} {t('portuguese')}
+        <DropdownMenuItem
+          className="flex items-center justify-center p-2 hover:bg-gray-100 dark:hover:bg-gray-900 cursor-pointer"
+          onClick={() => changeLocale('pt')}
+        >
+          {renderFlag('pt')}
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => changeLocale('es')}>
-          {renderFlag('es')} {t('spanish')}
+        <DropdownMenuItem
+          className="flex items-center justify-center p-2 hover:bg-gray-100 dark:hover:bg-gray-900 cursor-pointer"
+          onClick={() => changeLocale('es')}
+        >
+          {renderFlag('es')}
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
