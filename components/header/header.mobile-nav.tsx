@@ -1,10 +1,8 @@
-import type * as CSS from 'csstype'
+import type * as CSS from 'csstype';
 import clsx from "clsx";
 import { FC, MouseEventHandler, useCallback } from "react";
-import BorderWidth = Property.BorderWidth;
-import Width = Property.Width;
 import { Link } from '../link';
-import { HEADER } from '../pages';
+import { HEADER } from '../../content/pages';
 import { useLocale, useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
 
@@ -19,8 +17,8 @@ const MobileNavButton = ({
   size,
   onClick,
 }: {
-  border: BorderWidth;
-  size: Width;
+  border: CSS.Property.BorderWidth;
+  size: CSS.Property.Width;
   active: boolean;
   onClick: MouseEventHandler<HTMLButtonElement>;
 }) => {
@@ -29,7 +27,7 @@ const MobileNavButton = ({
       type="button"
       onClick={onClick}
       className="relative z-50 p-1"
-      style={{ "--nav-icon-size": size, "--nav-icon-border": border }}
+      style={{ "--nav-icon-size": size, "--nav-icon-border": border } as React.CSSProperties}
     >
       <span className="sr-only">Mobile Navigation</span>
       <i className={clsx("burger-menu", active && "active")}>
@@ -72,8 +70,8 @@ export const MobileNav: FC<HeaderMobileNavProps> = ({ showNav, setShowNav }) => 
                 )}
                 style={{
                   transitionDelay: showNav ? `${index * 0.01}s` : `${index * 0.025}s`,
-                  "--tw-translate-y": showNav ? "0%" : "-100%",
-                }}
+                  ["--tw-translate-y" as any]: showNav ? "0%" : "-100%",
+                } as React.CSSProperties}
                 key={index}
               />
             );

@@ -29,6 +29,45 @@
       "fr": "Francês",
       "pt": "Português",
       "es": "Espanhol"
+    },
+
+    "Hero": {
+      "pre": "Welcome to my site.",
+      "heading": "I am <strong>Edson Araújo</strong>, Full Stack developer.",
+      "tech": {
+        "Java": "Java",
+        "Spring Boot": "Spring Boot",
+        "TypeScript": "TypeScript",
+        "React": "React",
+        "Laravel": "Laravel"
+      },
+      "body1": "I love writing code that takes things to the next level, creating highly performant applications, automated API integrations, and creating impressive user experiences that make you feel ",
+      "body2": "I am always eager to learn and explore new technologies, frameworks, and programming languages. Currently, I am learning about ",
+      "and": "and",
+      "cta1": {
+        "href": "mailto:edsonaraujo.dev@gmail.com",
+        "name": "Get in touch"
+      },
+      "cta2": {
+        "href": "/resume",
+        "name": "Resume"
+      },
+      "great": "GREAT!",
+      "Badge": {
+        "Cinephile": "Cinephile",
+        "Geek": "Geek",
+        "Gym": "Gym Enthusiast",
+        "Technology": "Technology Enthusiast"
+      }
+    },
+    "TwitterInfo": {
+      "description": "Studying and sharing knowledge; Web Development; Coffee, daily life, and a few other things.",
+      "Following": "Following",
+      "Followers": "Followers"
+    },
+
+    "Toast": {
+      "copyCode": "Code Copied to Clipboard"
     }
-  
+
 }

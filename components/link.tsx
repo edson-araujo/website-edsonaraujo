@@ -14,8 +14,9 @@ export const Link: FC<LinkProps> = ({
   passHref,
   prefetch,
   locale,
-  legacyBehavior,
+  legacyBehavior, // Adiciona esta linha
   onClick,
+  className, // Adiciona className para garantir que as classes sejam passadas
   ...AnchorProps
 }) => {
   const nextLinkProps = {
@@ -54,27 +55,19 @@ export const Link: FC<LinkProps> = ({
 
   if (href && !isExternalUrl(href)) {
     return (
-      <NextLink
-        {...nextLinkProps}
-        href={
-          typeof href === "string" ? href.replace(/^\/products\//gi, "/") : href
-        }
-        onClick={handleClick}
-        {...AnchorProps}
-      >
-        {children}
+      <NextLink {...nextLinkProps} href={typeof href === "string" ? href.replace(/^\/products\//gi, "/") : href} passHref legacyBehavior>
+        <a {...AnchorProps} className={className} onClick={handleClick}>
+          {children}
+        </a>
       </NextLink>
     );
   } else if (href) {
     return (
       <a
-        href={
-          typeof href === "string" ? href.replace(/^\/products\//gi, "/") : href
-        }
-        rel={
-          AnchorProps?.target === "_blank" ? "noopener noreferrer" : undefined
-        }
-        onClick={onClick}
+        href={typeof href === "string" ? href.replace(/^\/products\//gi, "/") : href}
+        rel={AnchorProps?.target === "_blank" ? "noopener noreferrer" : undefined}
+        onClick={handleClick}
+        className={className}
         {...AnchorProps}
       >
         {children}
@@ -82,7 +75,7 @@ export const Link: FC<LinkProps> = ({
     );
   } else {
     return (
-      <span onClick={onClick} {...AnchorProps}>
+      <span onClick={handleClick} className={className} {...AnchorProps}>
         {children}
       </span>
     );

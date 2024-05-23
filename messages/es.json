@@ -1,34 +1,72 @@
 {
-    "Home": {
-      "title": "Hola mundo",
-      "description": "Esto es una gran descripción, si te gusta mi contenido, suscríbete al canal XD",
-      "client": "Lado del cliente"
-    },
+  "Home": {
+    "title": "¡Hola mundo!",
+    "description": "Esta es una descripción graaande XD Si te gusta este tipo de contenido, por favor suscríbete a mi canal",
+    "client": "LADO DEL CLIENTE"
+  },
   
-    "Header": {
-      "Home": "Inicio",
-      "Sobre": "Sobre",
-      "Projetos": "Proyectos",
-      "Currículo": "Currículum",
-      "Links": "Enlaces",
-      "ContactMe": "Contáctame",
-      "AltHome": "Inicio",
-      "AltAbout": "Más sobre mí",
-      "AltPortfolio": "Trabajos que he hecho",
-      "AltResume": "Mi currículum profesional",
-      "AltLinks": "Más información sobre mí"
-    },
+  "Header": {
+    "Home": "Inicio",
+    "Sobre": "Acerca de",
+    "Projetos": "Proyectos",
+    "Currículo": "Currículum",
+    "Links": "Enlaces",
+    "ContactMe": "Contáctame",
+    "AltHome": "Inicio",
+    "AltAbout": "Más sobre mí",
+    "AltPortfolio": "Trabajos que he realizado",
+    "AltResume": "Mi currículum profesional",
+    "AltLinks": "Más información sobre mí"
+  },
   
-    "SelectLanguage": {
-      "title": "Seleccione el idioma",
-      "english": "Inglés",
-      "french": "Francés",
-      "portuguese": "Portugués",
-      "spanish": "Español",
-      "en": "Inglés",
-      "fr": "Francés",
-      "pt": "Portugués",
-      "es": "Español"
+  "SelectLanguage": {
+    "title": "Seleccione el Idioma",
+    "english": "Inglés",
+    "french": "Francés",
+    "portuguese": "Portugués",
+    "spanish": "Español",
+    "en": "Inglés",
+    "fr": "Francés",
+    "pt": "Portugués",
+    "es": "Español"
+  },
+
+  "Hero": {
+    "pre": "Bienvenido a mi sitio.",
+    "heading": "Soy <strong>Edson Araújo</strong>, desarrollador Full Stack.",
+    "tech": {
+      "Java": "Java",
+      "Spring Boot": "Spring Boot",
+      "TypeScript": "TypeScript",
+      "React": "React",
+      "Laravel": "Laravel"
+    },
+    "body1": "Me encanta escribir código que lleva las cosas al siguiente nivel, creando aplicaciones altamente eficientes, integraciones de API automatizadas y creando experiencias de usuario impresionantes que te hacen sentir ",
+    "body2": "Siempre estoy ansioso por aprender y explorar nuevas tecnologías, frameworks y lenguajes de programación. Actualmente, estoy aprendiendo sobre ",
+    "and": "y",
+    "cta1": {
+      "href": "mailto:edsonaraujo.dev@gmail.com",
+      "name": "Ponte en contacto"
+    },
+    "cta2": {
+      "href": "/curriculum",
+      "name": "Currículum"
+    },
+    "great": "¡GENIAL!",
+    "Badge": {
+      "Cinephile": "Cinéfilo",
+      "Geek": "Geek",
+      "Gym": "Entusiasta del Gimnasio",
+      "Technology": "Entusiasta de la Tecnología"
     }
+  },
+  "TwitterInfo": {
+    "description": "Estudiando y compartiendo conocimientos; Desarrollo Web; Café, vida diaria y algunas otras cosas.",
+    "Following": "Siguiendo",
+    "Followers": "Seguidores"
+  },
+
+  "Toast": {
+    "copyCode": "Código copiado al portapapeles"
   }
-  
+}

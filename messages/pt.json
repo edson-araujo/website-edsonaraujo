@@ -1,10 +1,10 @@
 {
   "Home": {
-    "title": "Ola mundo",
-    "description": "Isso e uma graaande descricao, se vc gosta do meu conteudoo se inscreva no canal XD ",
-    "client": "Lado do cliente"
+    "title": "Olá mundo!",
+    "description": "Esta é uma descrição graaande XD Se você gosta desse tipo de conteúdo, por favor, inscreva-se no meu canal",
+    "client": "LADO DO CLIENTE"
   },
-
+  
   "Header": {
     "Home": "Início",
     "Sobre": "Sobre",
@@ -12,13 +12,13 @@
     "Currículo": "Currículo",
     "Links": "Links",
     "ContactMe": "Contate-me",
-    "AltHome": "Home",
+    "AltHome": "Início",
     "AltAbout": "Mais sobre mim",
-    "AltPortfolio": "Trabalhos que fiz",
+    "AltPortfolio": "Trabalhos que realizei",
     "AltResume": "Meu currículo profissional",
     "AltLinks": "Mais informações sobre mim"
   },
-
+  
   "SelectLanguage": {
     "title": "Selecione o Idioma",
     "english": "Inglês",
@@ -29,5 +29,44 @@
     "fr": "Francês",
     "pt": "Português",
     "es": "Espanhol"
+  },
+
+  "Hero": {
+    "pre": "Bem vindo ao meu site.",
+    "heading": "Eu sou <strong>Edson Araújo</strong>, desenvolvedor Full Stack.",
+    "tech": {
+      "Java": "Java",
+      "Spring Boot": "Spring Boot",
+      "TypeScript": "TypeScript",
+      "React": "React",
+      "Laravel": "Laravel"
+    },
+    "body1": "Eu amo escrever código que leva as coisas para o próximo nível, criando aplicações altamente performáticos, integrações de API automatizadas e criando experiências de usuário impressionantes que fazem você sentir-se ",
+    "body2": "Eu estou sempre ansioso para aprender e explorar novas tecnologias, frameworks e linguagens de programação. Atualmente, estou aprendendo sobre ",
+    "and": "e",
+    "cta1": {
+      "href": "mailto:edsonaraujo.dev@gmail.com",
+      "name": "Entre em contato"
+    },
+    "cta2": {
+      "href": "/curriculo",
+      "name": "Currículo"
+    },
+    "great": "ÓTIMO!",
+    "Badge": {
+      "Cinephile": "Cinéfilo",
+      "Geek": "Geek",
+      "Gym": "Entusiasta de Academia",
+      "Technology": "Entusiasta de Tecnologia"
+    }
+  },
+  "TwitterInfo": {
+    "description": "Estudando e compartilhando conhecimento; Desenvolvimento Web; Café, cotidiano e algumas outras coisas.",
+    "Following": "Seguindo",
+    "Followers": "Seguidores"
+  },
+
+  "Toast": {
+    "copyCode": "Código copiado para a área de transferência"
   }
 }

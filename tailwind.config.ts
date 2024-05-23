@@ -9,16 +9,16 @@ type ColorKey = keyof typeof colors;
 type ColorIndex = keyof typeof colors['slate'];
 
 function hexToRgb(hex: string): string {
-  const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{3})$/i.exec(hex);
+  const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
   return `${parseInt(result![1], 16)} ${parseInt(result![2], 16)} ${parseInt(result![3], 16)}`;
 }
 
 const config: Config = {
   content: [
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-    './components/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{ts,tsx,js,jsx}',
+    './content/**/*.{ts,tsx,js,jsx}',
+    './app/**/*.{ts,tsx,js,jsx}',
+    './src/**/*.{ts,tsx,js,jsx}',
   ],
   darkMode: "class",
   mode: "jit",
@@ -167,7 +167,7 @@ const config: Config = {
         "gradient-radial-to-br": "radial-gradient(90% 115% at 0% 0%, var(--tw-gradient-stops))",
         "gradient-radial-to-bl": "radial-gradient(90% 115% at 100% 0%, var(--tw-gradient-stops))",
       }),
-      typography: ({ theme }: { theme: Record<string, any> }) => ({
+      typography: ({ theme }: { theme: (path: string) => Record<string, any> }) => ({
         dark: {
           css: {
             "--tw-prose-body": colors.slate[400],
@@ -186,10 +186,6 @@ const config: Config = {
             "--tw-prose-quote-borders": colors.slate[700],
             "--tw-prose-captions": colors.slate[400],
             "--tw-prose-code": colors.white,
-            // "--tw-prose-pre-code": colors.slate[300],
-            // "--tw-prose-pre-bg": "rgb(0 0 0 / 50%)",
-            // "--tw-prose-th-borders": colors.slate[600],
-            // "--tw-prose-td-borders": colors.slate[700],
           },
         },
       }),
@@ -248,7 +244,7 @@ const config: Config = {
         },
       });
     }),
-    ({ matchUtilities, theme }: { matchUtilities: any, theme: Record<string, any> }) => {
+    plugin(({ matchUtilities, theme }) => {
       matchUtilities(
         {
           "bg-grid": (value: string) => {
@@ -297,13 +293,13 @@ const config: Config = {
         },
         { values: theme("spacing") }
       );
-    },
-    ({ addUtilities, theme }: { addUtilities: any, theme: Record<string, any> }) => {
+    }),
+    plugin(({ addUtilities, theme }) => {
       const backgroundSize = "7.07px 7.07px";
       const backgroundImage = (color: string) =>
         `linear-gradient(135deg, ${color} 10%, transparent 10%, transparent 50%, ${color} 50%, ${color} 60%, transparent 60%, transparent 100%)`;
-      const colors = Object.entries(theme("backgroundColor")).filter(
-        ([, value]) => typeof value === "object" && value[400] && value[500]
+      const colors = Object.entries(theme("backgroundColor") || {}).filter(
+        ([, value]) => typeof value === "object" && value && value[400] && value[500]
       );
 
       addUtilities(
@@ -336,7 +332,7 @@ const config: Config = {
           fontVariantLigatures: "none",
         },
       });
-    },
+    }),
   ],
 };
 

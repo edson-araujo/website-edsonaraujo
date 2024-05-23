@@ -1,10 +1,10 @@
 {
   "Home": {
-    "title": "Bonjour le monde",
-    "description": "Ceci est une très grande description, si vous aimez mon contenu, abonnez-vous à la chaîne XD",
-    "client": "Côté client"
+    "title": "Bonjour le monde!",
+    "description": "Ceci est une très graaande description XD Si vous aimez ce type de contenu, veuillez vous abonner à ma chaîne",
+    "client": "CÔTÉ CLIENT"
   },
-
+  
   "Header": {
     "Home": "Accueil",
     "Sobre": "À propos",
@@ -13,14 +13,14 @@
     "Links": "Liens",
     "ContactMe": "Contactez-moi",
     "AltHome": "Accueil",
-    "AltAbout": "Plus sur moi",
+    "AltAbout": "En savoir plus sur moi",
     "AltPortfolio": "Travaux que j'ai réalisés",
     "AltResume": "Mon CV professionnel",
     "AltLinks": "Plus d'informations sur moi"
   },
-
+  
   "SelectLanguage": {
-    "title": "Sélectionnez la langue",
+    "title": "Sélectionnez la Langue",
     "english": "Anglais",
     "french": "Français",
     "portuguese": "Portugais",
@@ -29,5 +29,44 @@
     "fr": "Français",
     "pt": "Portugais",
     "es": "Espagnol"
+  },
+
+  "Hero": {
+    "pre": "Bienvenue sur mon site.",
+    "heading": "Je suis <strong>Edson Araújo</strong>, développeur Full Stack.",
+    "tech": {
+      "Java": "Java",
+      "Spring Boot": "Spring Boot",
+      "TypeScript": "TypeScript",
+      "React": "React",
+      "Laravel": "Laravel"
+    },
+    "body1": "J'adore écrire du code qui amène les choses au niveau supérieur, en créant des applications très performantes, des intégrations API automatisées et en créant des expériences utilisateur impressionnantes qui vous font sentir ",
+    "body2": "Je suis toujours impatient d'apprendre et d'explorer de nouvelles technologies, frameworks et langages de programmation. Actuellement, j'apprends sur ",
+    "and": "et",
+    "cta1": {
+      "href": "mailto:edsonaraujo.dev@gmail.com",
+      "name": "Contactez-moi"
+    },
+    "cta2": {
+      "href": "/cv",
+      "name": "CV"
+    },
+    "great": "GÉNIAL!",
+    "Badge": {
+      "Cinephile": "Cinéphile",
+      "Geek": "Geek",
+      "Gym": "Passionné de Gym",
+      "Technology": "Passionné de Technologie"
+    }
+  },
+  "TwitterInfo": {
+    "description": "Étudier et partager des connaissances; Développement Web; Café, quotidien et quelques autres choses.",
+    "Following": "Abonnements",
+    "Followers": "Abonnés"
+  },
+
+  "Toast": {
+    "copyCode": "Code copié dans le presse-papiers"
   }
 }

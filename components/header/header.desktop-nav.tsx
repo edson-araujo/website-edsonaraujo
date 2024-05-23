@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import { FC } from "react";
 import { Link } from "../link";
 import { HoverEffect } from "./header.desktop-nav.hover-effect";
-import { HEADER } from "../pages";
+import { HEADER } from "../../content/pages";
 import { useLocale, useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
 
