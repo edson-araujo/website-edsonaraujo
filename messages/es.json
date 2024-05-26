@@ -2,7 +2,9 @@
   "Home": {
     "title": "¡Hola mundo!",
     "description": "Esta es una descripción graaande XD Si te gusta este tipo de contenido, por favor suscríbete a mi canal",
-    "client": "LADO DEL CLIENTE"
+    "client": "LADO DEL CLIENTE",
+    "prev": "anterior",
+    "next": "siguiente"
   },
   
   "Header": {
@@ -18,7 +20,9 @@
     "AltResume": "Mi currículum profesional",
     "AltLinks": "Más información sobre mí"
   },
-  
+  "Footer": {
+    "baseboard": "Edson Araújo, Todos los derechos reservados."
+  }, 
   "SelectLanguage": {
     "title": "Seleccione el Idioma",
     "english": "Inglés",
@@ -68,5 +72,204 @@
 
   "Toast": {
     "copyCode": "Código copiado al portapapeles"
+  },
+
+  "About": {
+    "year": "Años",
+    "yearTooltip": "",
+    "experience": "Experiencia",
+    "experienceTooltip": "Primera línea de código en 2020",
+    "commits": "Commits",
+    "commitsTooltip": "30 GitHub Stars",
+    "unitSecond": " Segundos",
+    "description1": "Soy un Desarrollador Web en Santos, São Paulo - Brasil. Mi enfoque durante años ha sido el desarrollo Full Stack",
+    "description2": "con",
+    "description3": "y",
+    "description4": "Pero actualmente trabajo en proyectos con",
+    "description5": "para crear experiencias de usuario únicas.",
+    "description6": "He pasado la mayor parte de mi vida profundamente interesado en la tecnología y la comida, construyendo continuamente cosas con ambos. En mi adolescencia, era un típico nerd de computadoras, pasando la mayor parte del tiempo trasteando con la computadora, modificando juegos y descubriendo cosas. Trasteando con hardware, ensamblando computadoras. Desarrollando sitios web con Wordpress. Y por supuesto, jugando videojuegos.",
+    "description7": "La mayor parte de eso sigue siendo cierto hoy en día.",
+    "images": {
+      "me": "Foto para las redes sociales",
+      "swimmingPool": "Día de piscina",
+      "bar": "Disfrutando de un buen restaurante",
+      "wedding": "Boda de amigos"
+    },
+    "timeline": {
+      "2002": {
+        "birth": {
+          "heading": "Nacimiento",
+          "description": "En Guarujá, São Paulo, nací yo."
+        }
+      },
+      "2007": {
+        "games": {
+          "heading": "Juegos",
+          "description": "Mis hermanos y yo recibimos una Nintendo Super NES, comenzó mi vida en los juegos, y Super Mario sigue siendo mi favorito."
+        },
+        "school": {
+          "heading": "Escuelita",
+          "description": "Ese año comencé mi vida académica, mi primer año en una escuela pública."
+        }
+      },
+      "2009": {
+        "newGames": {
+          "heading": "Nuevos juegos",
+          "description": "Ese año recibí una actualización en los juegos y recibí una Sega Mega Drive como regalo."
+        }
+      },
+      "2010": {
+        "firstComputerContact": {
+          "heading": "Primer contacto con la computadora",
+          "description": "Mi hermano recibió una computadora, y tuve mi primer contacto con ella. Por supuesto, fue amor a primera vista."
+        }
+      },
+      "2011": {
+        "computerGames": {
+          "heading": "Juegos ahora en la computadora",
+          "description": "Después de acostumbrarme a la computadora, comencé a jugar Habbo, un famoso juego en línea de la época, pasando toda la tarde jugando."
+        }
+      },
+      "2012": {
+        "socialMedia": {
+          "heading": "Comenzando con las Redes Sociales",
+          "description": "Creé mi primera cuenta en Orkut y Twitter, me encantaba navegar por las redes sociales."
+        },
+        "firstFlight": {
+          "heading": "Primera vez en avión",
+          "description": "Viajé por primera vez en avión, volé al Estado de Ceará para visitar a mi familia."
+        },
+        "firstPhone": {
+          "heading": "Mi primer celular",
+          "description": "Mi mamá me regaló mi primer celular por mi cumpleaños número 11, y ni siquiera era táctil."
+        }
+      },
+      "2014": {
+        "firstTouchPhone": {
+          "heading": "Mi primer celular táctil",
+          "description": "Para mi cumpleaños, recibí mi primer celular táctil."
+        },
+        "secondCearaTrip": {
+          "heading": "Segunda vez al Ceará",
+          "description": "Viajé por segunda vez para pasar las fiestas de fin de año en el Estado de Ceará."
+        }
+      },
+      "2016": {
+        "middleSchoolGraduation": {
+          "heading": "Me gradué de la escuela secundaria",
+          "description": "Me gradué de la escuela secundaria, emocionado por la nueva etapa de mi vida."
+        }
+      },
+      "2017": {
+        "firstJob": {
+          "heading": "Mi primer trabajo",
+          "description": "Mi primer trabajo en la Municipalidad de Guarujá como aprendiz."
+        },
+        "englishStudies": {
+          "heading": "Estudiando inglés",
+          "description": "Comencé mi curso de inglés en una escuela de idiomas."
+        }
+      },
+      "2018": {
+        "technicalCourse": {
+          "heading": "Curso técnico",
+          "description": "Comencé mi curso técnico en Administración de Empresas en la ETEC de Guarujá."
+        }
+      },
+      "2019": {
+        "endOfEnglishCourse": {
+          "heading": "Fin del curso de inglés",
+          "description": "Terminé el curso de inglés debido a problemas financieros y continué estudiando solo."
+        },
+        "highSchoolGraduation": {
+          "heading": "Me gradué de la escuela secundaria",
+          "description": "Me gradué de la escuela secundaria en diciembre de 2019."
+        },
+        "technicalCourseGraduation": {
+          "heading": "Me gradué del curso técnico",
+          "description": "Completé mi curso técnico en Administración de Empresas."
+        }
+      },
+      "2020": {
+        "businessAdministrationCollege": {
+          "heading": "Facultad de Administración de Empresas",
+          "description": "Comencé a estudiar Administración de Empresas en la universidad."
+        },
+        "covid19": {
+          "heading": "Covid 19",
+          "description": "Debido a la cuarentena del Covid 19, comencé a trabajar desde casa y mi universidad era a distancia."
+        },
+        "firstCode": {
+          "heading": "Primera línea de código",
+          "description": "Escribí mi primera línea de código en Python: print('Hello world')"
+        }
+      },
+      "2021": {
+        "computerEngineeringCollege": {
+          "heading": "Facultad de Ingeniería Informática",
+          "description": "Cambié de curso y universidad a Ingeniería Informática y recibí una beca del 100%."
+        },
+        "frontEndCourseCompletion": {
+          "heading": "Finalicé mi curso de Front End",
+          "description": "Finalicé mi curso de Front End, y me entusiasmé mucho con el desarrollo."
+        }
+      },
+      "2022": {
+        "javaSpringCourse": {
+          "heading": "Back end con Java y Spring",
+          "description": "Completé mi curso de Back end con Java y Spring, convirtiéndome en desarrollador Full Stack."
+        },
+        "firstDevJob": {
+          "heading": "Trabajando como desarrollador",
+          "description": "Fui contratado como desarrollador Full Stack para trabajar con Java, Struts y React."
+        }
+      },
+      "2023": {
+        "changedCourse": {
+          "heading": "Cambié de curso",
+          "description": "Cambié de curso debido a conflictos con el plan de estudios de la universidad anterior."
+        },
+        "movedOut": {
+          "heading": "Me mudé de casa",
+          "description": "Me mudé de la casa de mis padres, con miedo de este desafío pero siempre fue mi objetivo."
+        },
+        "typescriptCourseCompletion": {
+          "heading": "Finalicé mi curso de TypeScript",
+          "description": "Debido a la tipificación, me enamoré de TypeScript y completé este curso."
+        },
+        "seriousIllness": {
+          "heading": "Me enfermé gravemente",
+          "description": "Descubrí una enfermedad autoinmune, fue un período complicado pero lo superé."
+        }
+      },
+      "2024": {
+        "laravelProjects": {
+          "heading": "Participé en proyectos de Laravel",
+          "description": "Trabajé en proyectos de Laravel, tuve el desafío y la oportunidad de trabajar con PHP, Laravel y Tailwind en un sistema de gestión ambiental."
+        },
+        "tailwindProjects": {
+          "heading": "Explorando Tailwind",
+          "description": "Completé mi curso de Tailwind, me encanta desarrollar proyectos con esta biblioteca."
+        },
+        "nextjsProjects": {
+          "heading": "Proyectos Next.js",
+          "description": "Desarrollé proyectos con Next.js, que me gustó trabajar."
+        }
+      }
+    }
+  },
+
+  "Portfolio": {
+    "pre": "Portfolio",
+    "heading": "Mes projets.",
+    "type": {
+      "allProjects": "Tous les projets",
+      "typescript": "Typescript",
+      "marketingSites": "Sites marketing",
+      "shopifyApps": "Applications Shopify",
+      "ecommerceSites": "Sites e-commerce",
+      "integrations": "Intégrations",
+      "devtools": "Outils de développement"
+    }
   }
 }

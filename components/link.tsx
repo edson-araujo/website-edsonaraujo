@@ -1,3 +1,5 @@
+"use client";
+
 import { isExternalUrl } from "@/utils/is-external-url";
 import NextLink, { LinkProps as NextLinkProps } from "next/link";
 import { AnchorHTMLAttributes, FC, useCallback, MouseEvent } from "react";
@@ -14,9 +16,8 @@ export const Link: FC<LinkProps> = ({
   passHref,
   prefetch,
   locale,
-  legacyBehavior, // Adiciona esta linha
+  legacyBehavior,
   onClick,
-  className, // Adiciona className para garantir que as classes sejam passadas
   ...AnchorProps
 }) => {
   const nextLinkProps = {
@@ -32,7 +33,7 @@ export const Link: FC<LinkProps> = ({
   };
 
   const handleClick = useCallback(
-    (e: MouseEvent<HTMLAnchorElement>) => {
+    (e) => {
       if (window.self !== window.top && href) {
         e.preventDefault();
         e.stopPropagation();
@@ -53,31 +54,42 @@ export const Link: FC<LinkProps> = ({
     [href, onClick]
   );
 
-  if (href && !isExternalUrl(href)) {
-    return (
-      <NextLink {...nextLinkProps} href={typeof href === "string" ? href.replace(/^\/products\//gi, "/") : href} passHref legacyBehavior>
-        <a {...AnchorProps} className={className} onClick={handleClick}>
+  return (
+    <>
+      {href && !isExternalUrl(href) ? (
+        <NextLink
+          {...nextLinkProps}
+          href={
+            typeof href === "string"
+              ? href.replace(/^\/products\//gi, "/")
+              : href
+          }
+          onClick={handleClick}
+          {...AnchorProps}
+          style={{ textDecoration: 'none', color: 'none' }}
+        >
+          {children}
+        </NextLink>
+      ) : href ? (
+        <a
+          href={
+            typeof href === "string"
+              ? href.replace(/^\/products\//gi, "/")
+              : href
+          }
+          rel={
+            AnchorProps?.target === "_blank" ? "noopener noreferrer" : undefined
+          }
+          onClick={onClick}
+          {...AnchorProps}
+        >
           {children}
         </a>
-      </NextLink>
-    );
-  } else if (href) {
-    return (
-      <a
-        href={typeof href === "string" ? href.replace(/^\/products\//gi, "/") : href}
-        rel={AnchorProps?.target === "_blank" ? "noopener noreferrer" : undefined}
-        onClick={handleClick}
-        className={className}
-        {...AnchorProps}
-      >
-        {children}
-      </a>
-    );
-  } else {
-    return (
-      <span onClick={handleClick} className={className} {...AnchorProps}>
-        {children}
-      </span>
-    );
-  }
+      ) : (
+        <span onClick={onClick} {...AnchorProps}>
+          {children}
+        </span>
+      )}
+    </>
+  );
 };

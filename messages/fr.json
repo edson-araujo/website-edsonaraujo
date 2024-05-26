@@ -2,7 +2,9 @@
   "Home": {
     "title": "Bonjour le monde!",
     "description": "Ceci est une très graaande description XD Si vous aimez ce type de contenu, veuillez vous abonner à ma chaîne",
-    "client": "CÔTÉ CLIENT"
+    "client": "CÔTÉ CLIENT",
+    "prev": "précédent",
+    "next": "suivant"
   },
   
   "Header": {
@@ -18,6 +20,9 @@
     "AltResume": "Mon CV professionnel",
     "AltLinks": "Plus d'informations sur moi"
   },
+  "Footer": {
+    "baseboard": "Edson Araújo, Tous droits réservés."
+  }, 
   
   "SelectLanguage": {
     "title": "Sélectionnez la Langue",
@@ -68,5 +73,204 @@
 
   "Toast": {
     "copyCode": "Code copié dans le presse-papiers"
+  },
+
+  "About": {
+    "year": "Années",
+    "yearTooltip": "",
+    "experience": "Expérience",
+    "experienceTooltip": "Première ligne de code en 2020",
+    "commits": "Commits",
+    "commitsTooltip": "30 GitHub Stars",
+    "unitSecond": " Secondes",
+    "description1": "Je suis Développeur Web à Santos, São Paulo - Brésil. Mon objectif pendant des années a été le développement Full Stack",
+    "description2": "avec",
+    "description3": "et",
+    "description4": "Mais actuellement je travaille sur des projets avec",
+    "description5": "pour créer des expériences utilisateur uniques.",
+    "description6": "J'ai passé la majeure partie de ma vie profondément intéressé par la technologie et la nourriture, construisant continuellement des choses avec les deux. Adolescent, j'étais un nerd de l'informatique typique, passant la plupart de mon temps à bricoler avec l'ordinateur, à modifier des jeux et à découvrir des choses. Bricoler avec le matériel, assembler des ordinateurs. Développer des sites web avec Wordpress. Et bien sûr, jouer à des jeux.",
+    "description7": "La plupart de ces choses sont encore vraies aujourd'hui.",
+    "images": {
+      "me": "Photo pour les réseaux sociaux",
+      "swimmingPool": "Journée piscine",
+      "bar": "Profiter d'un bon restaurant",
+      "wedding": "Mariage d'amis"
+    },
+    "timeline": {
+      "2002": {
+        "birth": {
+          "heading": "Naissance",
+          "description": "À Guarujá, São Paulo, je suis né."
+        }
+      },
+      "2007": {
+        "games": {
+          "heading": "Jeux",
+          "description": "Mes frères et moi avons reçu une Nintendo Super NES, cela a commencé ma vie dans les jeux, et Super Mario est toujours mon préféré."
+        },
+        "school": {
+          "heading": "École",
+          "description": "Cette année-là, j'ai commencé ma vie académique, ma première année dans une école publique."
+        }
+      },
+      "2009": {
+        "newGames": {
+          "heading": "Nouveaux jeux",
+          "description": "Cette année-là, j'ai eu une mise à niveau dans les jeux et j'ai reçu une Sega Mega Drive en cadeau."
+        }
+      },
+      "2010": {
+        "firstComputerContact": {
+          "heading": "Premier contact avec un ordinateur",
+          "description": "Mon frère a reçu un ordinateur, et j'ai eu mon premier contact avec lui. Bien sûr, ce fut le coup de foudre."
+        }
+      },
+      "2011": {
+        "computerGames": {
+          "heading": "Jeux sur ordinateur",
+          "description": "Après m'être habitué à l'ordinateur, j'ai commencé à jouer à Habbo, un célèbre jeu en ligne de l'époque, passant tout l'après-midi à jouer."
+        }
+      },
+      "2012": {
+        "socialMedia": {
+          "heading": "Début sur les réseaux sociaux",
+          "description": "J'ai créé mon premier compte sur Orkut et Twitter, j'aimais naviguer sur les réseaux sociaux."
+        },
+        "firstFlight": {
+          "heading": "Premier vol",
+          "description": "J'ai voyagé en avion pour la première fois, volant vers le Ceará pour rendre visite à ma famille."
+        },
+        "firstPhone": {
+          "heading": "Mon premier téléphone",
+          "description": "Ma mère m'a donné mon premier téléphone pour mes 11 ans, et il n'était même pas tactile."
+        }
+      },
+      "2014": {
+        "firstTouchPhone": {
+          "heading": "Mon premier téléphone tactile",
+          "description": "Pour mon anniversaire, j'ai reçu mon premier téléphone tactile."
+        },
+        "secondCearaTrip": {
+          "heading": "Deuxième voyage au Ceará",
+          "description": "J'ai voyagé pour la deuxième fois pour passer les fêtes de fin d'année au Ceará."
+        }
+      },
+      "2016": {
+        "middleSchoolGraduation": {
+          "heading": "Diplômé du collège",
+          "description": "J'ai obtenu mon diplôme de collège, excité pour la nouvelle étape de ma vie."
+        }
+      },
+      "2017": {
+        "firstJob": {
+          "heading": "Mon premier travail",
+          "description": "Mon premier travail à la mairie de Guarujá en tant qu'apprenti."
+        },
+        "englishStudies": {
+          "heading": "Études d'anglais",
+          "description": "J'ai commencé mon cours d'anglais dans une école de langues."
+        }
+      },
+      "2018": {
+        "technicalCourse": {
+          "heading": "Cours technique",
+          "description": "J'ai commencé mon cours technique en administration des affaires à l'ETEC de Guarujá."
+        }
+      },
+      "2019": {
+        "endOfEnglishCourse": {
+          "heading": "Fin du cours d'anglais",
+          "description": "J'ai terminé le cours d'anglais en raison de problèmes financiers et j'ai continué à étudier seul."
+        },
+        "highSchoolGraduation": {
+          "heading": "Diplômé du lycée",
+          "description": "J'ai obtenu mon diplôme de lycée en décembre 2019."
+        },
+        "technicalCourseGraduation": {
+          "heading": "Diplômé du cours technique",
+          "description": "J'ai terminé mon cours technique en administration des affaires."
+        }
+      },
+      "2020": {
+        "businessAdministrationCollege": {
+          "heading": "Université d'administration des affaires",
+          "description": "J'ai commencé à étudier l'administration des affaires à l'université."
+        },
+        "covid19": {
+          "heading": "Covid 19",
+          "description": "En raison de la quarantaine du Covid 19, j'ai commencé à travailler à domicile, et mes études universitaires étaient en ligne."
+        },
+        "firstCode": {
+          "heading": "Première ligne de code",
+          "description": "J'ai écrit ma première ligne de code en Python : print('Hello world')"
+        }
+      },
+      "2021": {
+        "computerEngineeringCollege": {
+          "heading": "Université d'ingénierie informatique",
+          "description": "J'ai changé de cours et d'université pour l'ingénierie informatique et j'ai reçu une bourse de 100%."
+        },
+        "frontEndCourseCompletion": {
+          "heading": "Fin du cours Front End",
+          "description": "J'ai terminé mon cours Front End, et je suis très enthousiaste à propos du développement."
+        }
+      },
+      "2022": {
+        "javaSpringCourse": {
+          "heading": "Back end avec Java et Spring",
+          "description": "J'ai terminé mon cours de Back end avec Java et Spring, devenant développeur Full Stack."
+        },
+        "firstDevJob": {
+          "heading": "Travailler en tant que développeur",
+          "description": "J'ai été embauché en tant que développeur Full Stack pour travailler avec Java, Struts et React."
+        }
+      },
+      "2023": {
+        "changedCourse": {
+          "heading": "Changé de cours",
+          "description": "J'ai changé de cours en raison de conflits avec le programme de cours de l'ancienne université."
+        },
+        "movedOut": {
+          "heading": "Déménagé",
+          "description": "J'ai déménagé de chez mes parents, effrayé par ce défi mais cela a toujours été mon objectif."
+        },
+        "typescriptCourseCompletion": {
+          "heading": "Fin du cours TypeScript",
+          "description": "En raison de la typage, je suis tombé amoureux de TypeScript et j'ai terminé ce cours."
+        },
+        "seriousIllness": {
+          "heading": "Très malade",
+          "description": "J'ai découvert une maladie auto-immune, c'était une période compliquée mais je l'ai surmontée."
+        }
+      },
+      "2024": {
+        "laravelProjects": {
+          "heading": "Participé à des projets Laravel",
+          "description": "J'ai travaillé sur des projets Laravel, j'ai eu le défi et l'opportunité de travailler avec PHP, Laravel et Tailwind dans un système de gestion environnementale."
+        },
+        "tailwindProjects": {
+          "heading": "Explorer Tailwind",
+          "description": "J'ai terminé mon cours de Tailwind, j'adore développer des projets avec cette bibliothèque."
+        },
+        "nextjsProjects": {
+          "heading": "Projets Next.js",
+          "description": "J'ai développé des projets avec Next.js, que j'ai aimé travailler avec."
+        }
+      }
+    }    
+  },
+
+  "Portfolio": {
+    "pre": "Portafolio",
+    "heading": "Mis proyectos.",
+    "type": {
+      "allProjects": "Todos los proyectos",
+      "typescript": "Typescript",
+      "marketingSites": "Sitios de marketing",
+      "shopifyApps": "Aplicaciones de Shopify",
+      "ecommerceSites": "Sitios de comercio electrónico",
+      "integrations": "Integraciones",
+      "devtools": "Herramientas de desarrollo"
+    }
   }
 }

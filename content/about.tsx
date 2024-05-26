@@ -1,8 +1,8 @@
 // @ts-ignore
 import me from "../public/images/about/me.jpeg";
-import swiminnigPool from "../public/images/about/swiminnig-pool.jpg";
+import swimmingPool from "../public/images/about/swiminnig-pool.jpg";
 import bar from "../public/images/about/bar.jpg";
-import casamento from "../public/images/about/casamento.jpg";
+import wedding from "../public/images/about/casamento.jpg";
 
 export const ABOUT = {
   stats: [
@@ -12,18 +12,18 @@ export const ABOUT = {
       }`,
       tooltip: `${Math.round(
         (Date.now() - new Date("2002-02-28T01:30:00").getTime()) / 1000
-      )} seconds`,
-      caption: "Anos",
+      )}`,
+      caption: "year",
     },
     {
       statistic: "3+",
-      tooltip: "Primeira linha de código em 2020",
-      caption: "Experiência",
+      tooltip: "experienceTooltip",
+      caption: "experience",
     },
     {
       statistic: "1000",
-      tooltip: "30 GitHub Stars",
-      caption: "Commits",
+      tooltip: "commitsTooltip",
+      caption: "commits",
     },
   ],
   description: (
@@ -45,19 +45,19 @@ export const ABOUT = {
   images: [
     {
       src: me,
-      alt: "Foto para as redes socias",
+      alt: "images.me",
     },
     {
-      src: swiminnigPool,
-      alt: "Dia de piscina",
+      src: swimmingPool,
+      alt: "images.swimmingPool",
     },
     {
       src: bar,
-      alt: "Apreciando um bom restaurante",
+      alt: "images.bar",
     },
     {
-      src: casamento,
-      alt: "Casando os amigos",
+      src: wedding,
+      alt: "images.wedding",
     }
   ],
 };

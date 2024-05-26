@@ -11,15 +11,15 @@ import { GloballyMountedProvider } from "./is-globally-mounted-store";
 export const ContextProviders: FC<PropsWithChildren<any>> = ({ children }) => {
   return (
     <PreloadedImagesProvider>
-      <NotificationsProvider>
-        <ThemeProvider attribute="class" defaultTheme="system">
-          <LazyMotion features={domAnimation}>
-            <TooltipProvider>
-              <GloballyMountedProvider>{children}</GloballyMountedProvider>
-            </TooltipProvider>
-          </LazyMotion>
-        </ThemeProvider>
-      </NotificationsProvider>
+      <GloballyMountedProvider>
+        <NotificationsProvider>
+          <ThemeProvider attribute="class">
+            <LazyMotion features={domAnimation}>
+              <TooltipProvider>{children}</TooltipProvider>
+            </LazyMotion>
+          </ThemeProvider>
+        </NotificationsProvider>
+      </GloballyMountedProvider>
     </PreloadedImagesProvider>
   );
 };

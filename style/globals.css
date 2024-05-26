@@ -1,5 +1,5 @@
-@import "./typography.scss"; /* Corrigido */
-@import "./prism.scss";
+@import "typography.scss"; /* Corrigido */
+@import "prism.scss";
 
 @tailwind base;
 @tailwind components;
@@ -149,4 +149,102 @@
 
 }
 
+/* Tooltip styles */
+.react-tooltip {
+  color: #fff;
+  background: #222;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  display: inline-block;
+  font-size: 13px;
+  padding: 8px 21px;
+  position: fixed;
+  pointer-events: none;
+  transition: opacity 0.3s ease-out;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+}
 
+.react-tooltip.show {
+  opacity: 0.9;
+  visibility: visible;
+}
+
+.react-tooltip.allow_hover,
+.react-tooltip.allow_click {
+  pointer-events: auto;
+}
+
+.react-tooltip.place-top {
+  margin-top: -10px;
+}
+
+.react-tooltip.place-top::before,
+.react-tooltip.place-top::after,
+.react-tooltip.place-bottom::before,
+.react-tooltip.place-bottom::after,
+.react-tooltip.place-left::before,
+.react-tooltip.place-left::after,
+.react-tooltip.place-right::before,
+.react-tooltip.place-right::after {
+  content: "";
+  position: absolute;
+  border-style: solid;
+}
+
+.react-tooltip.place-top::after {
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  bottom: -6px;
+  left: 50%;
+  margin-left: -8px;
+  border-top-color: white;
+  border-top-style: solid;
+  border-top-width: 6px;
+}
+
+.react-tooltip.place-bottom {
+  margin-top: 10px;
+}
+
+.react-tooltip.place-bottom::after {
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  top: -6px;
+  left: 50%;
+  margin-left: -8px;
+  border-bottom-color: white;
+  border-bottom-style: solid;
+  border-bottom-width: 6px;
+}
+
+.react-tooltip.place-left {
+  margin-left: -10px;
+}
+
+.react-tooltip.place-left::after {
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  right: -6px;
+  top: 50%;
+  margin-top: -4px;
+  border-left-color: white;
+  border-left-style: solid;
+  border-left-width: 6px;
+}
+
+.react-tooltip.place-right {
+  margin-left: 10px;
+}
+
+.react-tooltip.place-right::after {
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  left: -6px;
+  top: 50%;
+  margin-top: -4px;
+  border-right-color: white;
+  border-right-style: solid;
+  border-right-width: 6px;
+}
