@@ -18,7 +18,7 @@ import { HoverEffect } from "@/components/header/header.desktop-nav.hover-effect
 import { ResumeFooter } from "@/components/resume/resume-mobile-footer";
 import { useTranslations } from "next-intl";
 
-export const Resume: FC = (props) => {
+const Resume: FC = (props) => {
   const { sections, filter, showSection, selectFilter } = useResumeSectionInView();
   const [inView, setInView] = useState("sections.all");
   const t = useTranslations("Resume");
