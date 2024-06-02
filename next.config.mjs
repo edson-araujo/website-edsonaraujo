@@ -7,6 +7,7 @@ const withNextIntl = createNextIntlPlugin();
 const nextConfig = {
   experimental: {
     appDir: true,
+    externalDir: true,
   },
   compiler: {
     styledComponents: true,
@@ -81,9 +82,9 @@ const nextConfig = {
 
     return config;
   },
-  experimental: {
-    externalDir: true,
-    // Remova 'images' daqui
+  i18n: {
+    locales: ['pt', 'en', 'es', 'fr'],
+    defaultLocale: 'pt',
   },
 };
 
