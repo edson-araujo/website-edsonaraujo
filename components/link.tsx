@@ -32,7 +32,7 @@ export const Link: FC<LinkProps> = ({
     legacyBehavior,
   };
 
-  const handleClick = useCallback((e) => {
+  const handleClick = useCallback((e: MouseEvent<HTMLAnchorElement>) => {
     if (window.self !== window.top && href) {
       e.preventDefault();
       e.stopPropagation();

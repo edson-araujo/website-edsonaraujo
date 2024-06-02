@@ -1,10 +1,5 @@
 import { StarIcon } from "@heroicons/react/20/solid";
 import { BookOpenIcon, BuildingOffice2Icon, CakeIcon, ChartBarIcon, CodeBracketIcon, CodeBracketSquareIcon, ComputerDesktopIcon, FireIcon, LanguageIcon, SignalIcon, UserCircleIcon, WifiIcon } from "@heroicons/react/24/solid";
-import { AiOutlineDollar } from "@react-icons/all-files/ai/AiOutlineDollar";
-import { BiGame } from "@react-icons/all-files/bi/BiGame";
-import { BiSticker } from "@react-icons/all-files/bi/BiSticker";
-import { FaChalkboardTeacher } from "@react-icons/all-files/fa/FaChalkboardTeacher";
-import { FaGraduationCap } from "@react-icons/all-files/fa/FaGraduationCap";
 import { FaBaby, FaGamepad } from "react-icons/fa";
 import { GiSchoolBag } from "react-icons/gi";
 import { IoGameController, IoShareSocial, IoAirplaneSharp, IoPhonePortrait, IoSchool, IoLogoReact, IoLogoLaravel } from "react-icons/io5";
@@ -19,22 +14,6 @@ import { BiSolidSchool, BiLogoTypescript } from "react-icons/bi";
 import { SiTailwindcss } from "react-icons/si";
 import { ImSad2 } from "react-icons/im";
 import { BsFillHousesFill } from "react-icons/bs";
-import { FaPlaneDeparture } from "@react-icons/all-files/fa/FaPlaneDeparture";
-import { FaQuestion } from "@react-icons/all-files/fa/FaQuestion";
-import { FaTruck } from "@react-icons/all-files/fa/FaTruck";
-import { FaTruckMoving } from "@react-icons/all-files/fa/FaTruckMoving";
-import { GiAfrica } from "@react-icons/all-files/gi/GiAfrica";
-import { GiBigDiamondRing } from "@react-icons/all-files/gi/GiBigDiamondRing";
-import { GiOppositeHearts } from "@react-icons/all-files/gi/GiOppositeHearts";
-import { GiShipBow } from "@react-icons/all-files/gi/GiShipBow";
-import { GiSoccerBall } from "@react-icons/all-files/gi/GiSoccerBall";
-import { GiSouthAfrica } from "@react-icons/all-files/gi/GiSouthAfrica";
-import { GiSuspensionBridge } from "@react-icons/all-files/gi/GiSuspensionBridge";
-import { GrRestaurant } from "@react-icons/all-files/gr/GrRestaurant";
-import { IoMdRestaurant } from "@react-icons/all-files/io/IoMdRestaurant";
-import { RiWalkFill } from "@react-icons/all-files/ri/RiWalkFill";
-import { SiCoronaengine } from "@react-icons/all-files/si/SiCoronaengine";
-import { SiShopify } from "@react-icons/all-files/si/SiShopify";
 
 export const TIMELINEOBJECT = {
   "2002": [

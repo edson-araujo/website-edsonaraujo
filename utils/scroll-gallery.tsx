@@ -3,14 +3,18 @@ import { FC, PropsWithChildren, useCallback, useEffect, useRef, useState } from 
 import { scrollToX } from "./scroll-to";
 import { useTranslations } from "next-intl";
 
-export const ScrollGallery: FC<
-  PropsWithChildren<{ itemWidth: number; gapWidth: number; filter }>
-> = ({ itemWidth, gapWidth, children, filter }) => {
+interface ScrollGalleryProps {
+  itemWidth: number;
+  gapWidth: number;
+  filter: string; // Especificando o tipo de filter
+}
+
+export const ScrollGallery: FC<PropsWithChildren<ScrollGalleryProps>> = ({ itemWidth, gapWidth, children, filter }) => {
   const scrollContainerRef = useRef<HTMLElement>(null);
   const [scrollNavigation, setScrollNavigation] = useState({ prev: false, next: true });
   const [isScrolling, setIsScrolling] = useState(false);
   const t = useTranslations("Home");
-  
+
   const handleClickPrevious = useCallback(() => {
     if (isScrolling) return;
     const scrollContainer = scrollContainerRef.current as HTMLDivElement;
@@ -66,32 +70,30 @@ export const ScrollGallery: FC<
   }, [filter, gapWidth, itemWidth]);
 
   return (
-    <>
-      <div className="relative">
-        <main
-          className="sm:scrollbar-none group relative flex snap-x snap-mandatory scroll-pl-[max(var(--slider-padding),calc((100%-72rem)/2+var(--slider-padding)))] gap-8 overflow-x-auto py-12 px-[max(var(--slider-padding),calc((100%-72rem)/2+var(--slider-padding)))] [--slider-padding:2rem]"
-          ref={scrollContainerRef}
-        >
-          {children}
-        </main>
-        <button
-          className="absolute left-10 bottom-0 hidden items-center gap-2 py-2 px-4 text-sm text-gray-500 transition-all duration-75 disabled:text-gray-300 h:text-gray-900 disabled:h:text-gray-300 d:text-gray-300 d:disabled:text-gray-700 d:hfa:text-gray-50 d:disabled:hfa:text-gray-700 md:flex"
-          onClick={handleClickPrevious}
-          disabled={!scrollNavigation.prev}
-        >
-          <ArrowLongLeftIcon className="mt-0.5 h-5 w-5" />
-          {t("prev")}
-        </button>
+    <div className="relative">
+      <main
+        className="sm:scrollbar-none group relative flex snap-x snap-mandatory scroll-pl-[max(var(--slider-padding),calc((100%-72rem)/2+var(--slider-padding)))] gap-8 overflow-x-auto py-12 px-[max(var(--slider-padding),calc((100%-72rem)/2+var(--slider-padding)))] [--slider-padding:2rem]"
+        ref={scrollContainerRef}
+      >
+        {children}
+      </main>
+      <button
+        className="absolute left-10 bottom-0 hidden items-center gap-2 py-2 px-4 text-sm text-gray-500 transition-all duration-75 disabled:text-gray-300 h:text-gray-900 disabled:h:text-gray-300 d:text-gray-300 d:disabled:text-gray-700 d:hfa:text-gray-50 d:disabled:hfa:text-gray-700 md:flex"
+        onClick={handleClickPrevious}
+        disabled={!scrollNavigation.prev}
+      >
+        <ArrowLongLeftIcon className="mt-0.5 h-5 w-5" />
+        {t("prev")}
+      </button>
 
-        <button
-          className="absolute right-10 bottom-0 hidden items-center gap-2 py-2 px-4 text-sm text-gray-500 transition-all duration-75 disabled:text-gray-300 h:text-gray-900 h:text-gray-900 disabled:h:text-gray-300 d:text-gray-300 d:disabled:text-gray-700 d:hfa:text-gray-50 d:disabled:hfa:text-gray-700 md:flex"
-          onClick={handleClickNext}
-          disabled={!scrollNavigation.next}
-        >
-           {t("next")}
-          <ArrowLongRightIcon className="mt-0.5 h-5 w-5" />
-        </button>
-      </div>
-    </>
+      <button
+        className="absolute right-10 bottom-0 hidden items-center gap-2 py-2 px-4 text-sm text-gray-500 transition-all duration-75 disabled:text-gray-300 h:text-gray-900 h:text-gray-900 disabled:h:text-gray-300 d:text-gray-300 d:disabled:text-gray-700 d:hfa:text-gray-50 d:disabled:hfa:text-gray-700 md:flex"
+        onClick={handleClickNext}
+        disabled={!scrollNavigation.next}
+      >
+        {t("next")}
+        <ArrowLongRightIcon className="mt-0.5 h-5 w-5" />
+      </button>
+    </div>
   );
 };

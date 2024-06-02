@@ -24,7 +24,7 @@ const SelectLanguage: FC = () => {
     return 'en';
   };
 
-  const initialLocale = pathname.split('/')[1] || getBrowserLocale();
+  const initialLocale = pathname ? pathname.split('/')[1] || getBrowserLocale() : getBrowserLocale();
   const [selectedLocale, setSelectedLocale] = useState(initialLocale);
 
   useEffect(() => {
@@ -32,16 +32,18 @@ const SelectLanguage: FC = () => {
   }, [initialLocale]);
 
   const changeLocale = (locale: string) => {
-    const basePathname =
-      pathname.startsWith('/en') ||
-      pathname.startsWith('/fr') ||
-      pathname.startsWith('/pt') ||
-      pathname.startsWith('/es')
-        ? pathname.replace(/^\/(en|fr|pt|es)/, '')
-        : pathname;
-    const newPathname = `/${locale}${basePathname}`;
-    router.push(newPathname);
-    setSelectedLocale(locale);
+    if (pathname) {
+      const basePathname =
+        pathname.startsWith('/en') ||
+        pathname.startsWith('/fr') ||
+        pathname.startsWith('/pt') ||
+        pathname.startsWith('/es')
+          ? pathname.replace(/^\/(en|fr|pt|es)/, '')
+          : pathname;
+      const newPathname = `/${locale}${basePathname}`;
+      router.push(newPathname);
+      setSelectedLocale(locale);
+    }
   };
 
   const renderFlag = (locale: string) => {

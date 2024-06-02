@@ -19,10 +19,11 @@ import { ResumeFooter } from "@/components/resume/resume-mobile-footer";
 import { useTranslations } from "next-intl";
 
 const Resume: FC = (props) => {
-  const { sections, filter, showSection, selectFilter } = useResumeSectionInView();
+  const { sections, filter, showSection, selectFilter } =
+    useResumeSectionInView();
   const [inView, setInView] = useState("sections.all");
   const t = useTranslations("Resume");
-  
+
   useEffect(() => {
     for (const key in sections) {
       const val = sections[key];
@@ -56,11 +57,18 @@ const Resume: FC = (props) => {
         <tr>
           <th className="flex w-[1024px] pb-4 text-left font-normal">
             <header className="">
-              <h1 className="text-4xl font-extrabold tracking-tight">{CV.name}</h1>
+              <h1 className="text-4xl font-extrabold tracking-tight">
+                {CV.name}
+              </h1>
               <h2 className="flex gap-1 ">
-                <span className="font-semibold tracking-tight text-gray-500">{CV.title} - </span>
+                <span className="font-semibold tracking-tight text-gray-500">
+                  {CV.title} -{" "}
+                </span>
                 {CV.primary_stack.map(({ name, Icon }) => (
-                  <span key={name} className="mx-1 flex items-center gap-1 text-gray-500">
+                  <span
+                    key={name}
+                    className="mx-1 flex items-center gap-1 text-gray-500"
+                  >
                     <Icon className="h-4 w-4" />
                     {name}
                   </span>
@@ -74,9 +82,13 @@ const Resume: FC = (props) => {
                 <Link href={`mailto:${CV.email}`}>{CV.email}</Link>
               </div>
               <div>
-                <Link href={CV.website}>{CV.website.replace("https://", "")}</Link>
+                <Link href={CV.website}>
+                  {CV.website.replace("https://", "")}
+                </Link>
                 <span> - </span>
-                <Link href="https://github.com/FelixTellmann">github.com/FelixTellmann</Link>
+                <Link href="https://github.com/FelixTellmann">
+                  github.com/FelixTellmann
+                </Link>
               </div>
             </div>
           </th>
@@ -86,7 +98,8 @@ const Resume: FC = (props) => {
         <tr>
           <th>
             <small className="absolute left-1/2 bottom-0 -translate-x-1/2 pb-1 pt-3 text-[13px] font-medium tracking-tight text-gray-400">
-              View full resume at <Link href="https://flext.dev">www.flext.dev</Link>
+              View full resume at{" "}
+              <Link href="https://flext.dev">www.flext.dev</Link>
             </small>
           </th>
         </tr>
@@ -96,7 +109,10 @@ const Resume: FC = (props) => {
           <td className="block print:!table-cell">
             <article className="relative mx-auto mb-16 grid max-w-6xl gap-12 px-4 py-16 print:!flex print:!py-0 print:!pl-24 md:px-8 lg:grid-cols-[1fr_200px] print:[&_*]:![-webkit-print-color-adjust:exact] print:[&_*]:![color-adjust:exact] print:[&_*]:![print-color-adjust:exact]">
               <main className="snap-y snap-normal spacing-10">
-                <ResumeSection title="introduction" className="break-inside-avoid print:!max-w-3xl">
+                <ResumeSection
+                  title="introduction"
+                  className="break-inside-avoid print:!max-w-3xl"
+                >
                   <p className="text-[15px] leading-relaxed text-gray-500 d:text-gray-300 d:text-gray-300 print:!-ml-24 print:!max-w-3xl print:!text-base">
                     {t(CV.intro)}
                   </p>
@@ -133,18 +149,25 @@ const Resume: FC = (props) => {
                 <ResumeSection
                   title="experience"
                   className={clsx(
-                    !CV.experience.filter(({ type }) => type.includes(filter) || filter === "sections.all")
-                      .length && "!hidden"
+                    !CV.experience.filter(
+                      ({ type }) =>
+                        type.includes(filter) || filter === "sections.all"
+                    ).length && "!hidden"
                   )}
                 >
                   <div className="spacing-8">
                     {CV.experience
                       .sort((a, b) => {
-                        if (new Date(a.dateFrom) < new Date(b.dateFrom)) return 1;
-                        if (new Date(a.dateFrom) > new Date(b.dateFrom)) return -1;
+                        if (new Date(a.dateFrom) < new Date(b.dateFrom))
+                          return 1;
+                        if (new Date(a.dateFrom) > new Date(b.dateFrom))
+                          return -1;
                         return 0;
                       })
-                      .filter(({ type }) => type.includes(filter) || filter === "sections.all")
+                      .filter(
+                        ({ type }) =>
+                          type.includes(filter) || filter === "sections.all"
+                      )
                       .map(
                         (
                           {
@@ -194,22 +217,37 @@ const Resume: FC = (props) => {
                 <ResumeSection
                   className={clsx(
                     "break-inside-avoid",
-                    !CV.education.filter(({ type }) => type.includes(filter) || filter === "sections.all")
-                      .length && "!hidden"
+                    !CV.education.filter(
+                      ({ type }) =>
+                        type.includes(filter) || filter === "sections.all"
+                    ).length && "!hidden"
                   )}
                   title="education"
                 >
                   <div className="spacing-8">
                     {CV.education
                       .sort((a, b) => {
-                        if (new Date(a.dateFrom) < new Date(b.dateFrom)) return 1;
-                        if (new Date(a.dateFrom) > new Date(b.dateFrom)) return -1;
+                        if (new Date(a.dateFrom) < new Date(b.dateFrom))
+                          return 1;
+                        if (new Date(a.dateFrom) > new Date(b.dateFrom))
+                          return -1;
                         return 0;
                       })
-                      .filter(({ type }) => type.includes(filter) || filter === "sections.all")
+                      .filter(
+                        ({ type }) =>
+                          type.includes(filter) || filter === "sections.all"
+                      )
                       .map(
                         (
-                          { dateFrom, dateTo, city, country, institution, certificate, level },
+                          {
+                            dateFrom,
+                            dateTo,
+                            city,
+                            country,
+                            institution,
+                            certificate,
+                            level,
+                          },
                           index,
                           arr
                         ) => {
@@ -256,7 +294,7 @@ const Resume: FC = (props) => {
                     <section className="relative max-w-prose spacing-1 print:!grid print:!max-w-3xl print:!grid-cols-[140px_1fr]">
                       <h3 className="items-baseline text-sm tracking-tight spacing-1 ">
                         <strong className="text-[17px] font-bold text-gray-900 d:text-gray-100 print:!text-sm print:!font-semibold ">
-                        {t("cv.programmingLanguage")}
+                          {t("cv.programmingLanguage")}
                         </strong>
                       </h3>
                       <p className="text-sm text-gray-500 marker:text-gray-400 d:text-gray-300/80 d:marker:text-gray-600 print:!mt-0">
@@ -268,7 +306,7 @@ const Resume: FC = (props) => {
                     <section className="relative max-w-prose spacing-1 print:!grid print:!max-w-3xl print:!grid-cols-[140px_1fr]">
                       <h3 className="items-baseline text-sm tracking-tight spacing-1 ">
                         <strong className="text-[17px] font-bold text-gray-900 d:text-gray-100 print:!text-sm print:!font-semibold ">
-                        {t("cv.Frameworks")}
+                          {t("cv.Frameworks")}
                         </strong>
                       </h3>
                       <p className="text-sm text-gray-500 marker:text-gray-400 d:text-gray-300/80 d:marker:text-gray-600 print:!mt-0">
@@ -308,7 +346,9 @@ const Resume: FC = (props) => {
                         </strong>{" "}
                       </h3>
                       <p className="text-sm text-gray-500 marker:text-gray-400 d:text-gray-300/80 d:marker:text-gray-600 print:!mt-0">
-                        {CV.capabilities.tools.map((language, index) => language.name).join(", ")}
+                        {CV.capabilities.tools
+                          .map((language, index) => language.name)
+                          .join(", ")}
                       </p>
                     </section>
                   </div>
@@ -317,7 +357,8 @@ const Resume: FC = (props) => {
                   className={clsx(
                     "break-inside-avoid",
                     !CV.certifications.filter(
-                      ({ type }) => type.includes(filter) || filter === "sections.all"
+                      ({ type }) =>
+                        type.includes(filter) || filter === "sections.all"
                     ).length && "!hidden"
                   )}
                   title="certifications"
@@ -331,7 +372,10 @@ const Resume: FC = (props) => {
                             if (new Date(a.date) > new Date(b.date)) return -1;
                             return 0;
                           })
-                          .filter(({ type }) => type.includes(filter) || filter === "sections.all")
+                          .filter(
+                            ({ type }) =>
+                              type.includes(filter) || filter === "sections.all"
+                          )
                           .map(({ date, name, type }, index, arr) => (
                             <li className="" key={index}>
                               <span className="inline-flex items-baseline gap-2">
@@ -348,40 +392,45 @@ const Resume: FC = (props) => {
                       </ul>
                     </section>
 
-                    {["all"].includes(filter)
-                      ? <section className="relative max-w-prose spacing-1">
-                          <h3 className="items-baseline text-sm tracking-tight spacing-1 ">
-                            <strong className="text-[17px] font-bold text-gray-900 d:text-gray-100">
-                              Other
-                            </strong>{" "}
-                          </h3>
-                          <ul className="list-outside list-disc pl-4 text-sm text-gray-500 marker:text-gray-400 d:text-gray-300/80 d:marker:text-gray-600">
-                            {CV.other.map(({ name }, index) => (
-                              <li className="pl-3" key={index}>
-                                {name}
-                              </li>
-                            ))}
-                          </ul>
-                        </section>
-                      : null}
+                    {["all"].includes(filter) ? (
+                      <section className="relative max-w-prose spacing-1">
+                        <h3 className="items-baseline text-sm tracking-tight spacing-1 ">
+                          <strong className="text-[17px] font-bold text-gray-900 d:text-gray-100">
+                            Other
+                          </strong>{" "}
+                        </h3>
+                        <ul className="list-outside list-disc pl-4 text-sm text-gray-500 marker:text-gray-400 d:text-gray-300/80 d:marker:text-gray-600">
+                          {CV.other.map(({ name }, index) => (
+                            <li className="pl-3" key={index}>
+                              {name}
+                            </li>
+                          ))}
+                        </ul>
+                      </section>
+                    ) : null}
                   </div>
                 </ResumeSection>
 
-                <ResumeSection className="break-inside-avoid print:!hidden" title="references">
+                <ResumeSection
+                  className="break-inside-avoid print:!hidden"
+                  title="references"
+                >
                   <div className="spacing-10">
-                    {CV.references.map(({ author, company, title, reference }) => (
-                      <figure key={author} className="max-w-prose spacing-2">
-                        <blockquote className="text-[15px] leading-relaxed text-gray-500 d:text-gray-300/90">
-                          {t(reference)}
-                        </blockquote>
-                        <figcaption className="">
-                          <div className="font-semibold">{t(author)}</div>
-                          <div className="text-sm text-gray-400">
-                            {t(title)} at {t(company)}
-                          </div>
-                        </figcaption>
-                      </figure>
-                    ))}
+                    {CV.references.map(
+                      ({ author, company, title, reference }) => (
+                        <figure key={author} className="max-w-prose spacing-2">
+                          <blockquote className="text-[15px] leading-relaxed text-gray-500 d:text-gray-300/90">
+                            {t(reference)}
+                          </blockquote>
+                          <figcaption className="">
+                            <div className="font-semibold">{t(author)}</div>
+                            <div className="text-sm text-gray-400">
+                              {t(title)} at {t(company)}
+                            </div>
+                          </figcaption>
+                        </figure>
+                      )
+                    )}
                   </div>
                 </ResumeSection>
                 <ResumeSection title="interests" className="break-inside-avoid">
@@ -429,12 +478,14 @@ const Resume: FC = (props) => {
                         key={key}
                         className={clsx(
                           "-ml-2 w-min rounded-md px-2 py-1 outline-none transition-all duration-75 hfa:outline-none",
-                          inView === key ? "text-sky-500 hf:text-sky-600" : "hf:text-gray-700"
+                          inView === key
+                            ? "text-sky-500 hf:text-sky-600"
+                            : "hf:text-gray-700"
                         )}
                         onClick={() => showSection(key)}
                         href={`#${key}`}
                       >
-                        {capitalize(t("sections."+key))}
+                        {capitalize(t("sections." + key))}
                       </Link>
                     ))}
                   </nav>
@@ -444,26 +495,31 @@ const Resume: FC = (props) => {
                     {t("FilterView")}
                   </div>
                   <nav className="flex flex-wrap gap-1.5">
-                    {(["sections.all", "sections.relevant", "sections.techDev", "sections.adm"] as const).map(
-                      (type) => (
-                        <button
-                          key={t(type)}
-                          type="button"
-                          className={clsx(
-                            "rounded border  px-1.5 py-0.5 text-xs font-medium outline-none hfa:outline-none ",
-                            filter.includes(type)
-                              ? "border-sky-300 bg-sky-100 text-gray-700 hf:border-sky-400 hf:bg-sky-300/40 hf:text-gray-800 d:border-sky-700 d:bg-sky-900/60 d:text-gray-200 d:hf:bg-sky-700/50 d:hf:text-gray-100"
-                              : "border-gray-200 bg-gray-100 text-gray-400 hf:border-gray-300 hf:bg-gray-200 hf:text-gray-700 d:border-gray-700 d:bg-gray-800 d:text-gray-300 d:hf:border-gray-600 d:hf:bg-gray-700 d:hf:text-gray-100"
-                          )}
-                          onClick={() => {
-                            selectFilter(type);
-                            scrollToY(150, 0);
-                          }}
-                        >
-                          {t(type)}
-                        </button>
-                      )
-                    )}
+                    {(
+                      [
+                        "sections.all",
+                        "sections.relevant",
+                        "sections.techDev",
+                        "sections.adm",
+                      ] as const
+                    ).map((type) => (
+                      <button
+                        key={t(type)}
+                        type="button"
+                        className={clsx(
+                          "rounded border  px-1.5 py-0.5 text-xs font-medium outline-none hfa:outline-none ",
+                          filter.includes(type)
+                            ? "border-sky-300 bg-sky-100 text-gray-700 hf:border-sky-400 hf:bg-sky-300/40 hf:text-gray-800 d:border-sky-700 d:bg-sky-900/60 d:text-gray-200 d:hf:bg-sky-700/50 d:hf:text-gray-100"
+                            : "border-gray-200 bg-gray-100 text-gray-400 hf:border-gray-300 hf:bg-gray-200 hf:text-gray-700 d:border-gray-700 d:bg-gray-800 d:text-gray-300 d:hf:border-gray-600 d:hf:bg-gray-700 d:hf:text-gray-100"
+                        )}
+                        onClick={() => {
+                          selectFilter(type);
+                          scrollToY(150, 0);
+                        }}
+                      >
+                        {t(type)}
+                      </button>
+                    ))}
                   </nav>
                 </section>
                 <section className="mt-2 spacing-1 print:!hidden">
