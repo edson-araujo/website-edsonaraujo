@@ -133,7 +133,7 @@ const Resume: FC = (props) => {
                 <ResumeSection
                   title="experience"
                   className={clsx(
-                    !CV.experience.filter(({ type }) => type.includes(filter) || filter === "tudo")
+                    !CV.experience.filter(({ type }) => type.includes(filter) || filter === "sections.all")
                       .length && "!hidden"
                   )}
                 >
@@ -144,7 +144,7 @@ const Resume: FC = (props) => {
                         if (new Date(a.dateFrom) > new Date(b.dateFrom)) return -1;
                         return 0;
                       })
-                      .filter(({ type }) => type.includes(filter) || filter === "tudo")
+                      .filter(({ type }) => type.includes(filter) || filter === "sections.all")
                       .map(
                         (
                           {
@@ -194,7 +194,7 @@ const Resume: FC = (props) => {
                 <ResumeSection
                   className={clsx(
                     "break-inside-avoid",
-                    !CV.education.filter(({ type }) => type.includes(filter) || filter === "tudo")
+                    !CV.education.filter(({ type }) => type.includes(filter) || filter === "sections.all")
                       .length && "!hidden"
                   )}
                   title="education"
@@ -206,7 +206,7 @@ const Resume: FC = (props) => {
                         if (new Date(a.dateFrom) > new Date(b.dateFrom)) return -1;
                         return 0;
                       })
-                      .filter(({ type }) => type.includes(filter) || filter === "tudo")
+                      .filter(({ type }) => type.includes(filter) || filter === "sections.all")
                       .map(
                         (
                           { dateFrom, dateTo, city, country, institution, certificate, level },
@@ -317,7 +317,7 @@ const Resume: FC = (props) => {
                   className={clsx(
                     "break-inside-avoid",
                     !CV.certifications.filter(
-                      ({ type }) => type.includes(filter) || filter === "tudo"
+                      ({ type }) => type.includes(filter) || filter === "sections.all"
                     ).length && "!hidden"
                   )}
                   title="certifications"
@@ -331,7 +331,7 @@ const Resume: FC = (props) => {
                             if (new Date(a.date) > new Date(b.date)) return -1;
                             return 0;
                           })
-                          .filter(({ type }) => type.includes(filter) || filter === "tudo")
+                          .filter(({ type }) => type.includes(filter) || filter === "sections.all")
                           .map(({ date, name, type }, index, arr) => (
                             <li className="" key={index}>
                               <span className="inline-flex items-baseline gap-2">
