@@ -70,7 +70,7 @@ export const ResumeSectionDateEvents = ({
       {bullets
         ? <ul className="list-outside list-disc pl-4 text-sm text-gray-500 marker:text-gray-400 d:text-gray-300/80 d:marker:text-gray-600 print:!text-base">
             {responsibilities
-              .filter(({ type }) => type.includes(filter) || filter === "tudo")
+              .filter(({ type }) => type.includes(filter) || filter === "sections.all")
               .map((responsibility, index) => (
                 <li className="pl-3" key={index}>
                   {t(responsibility.content)}
@@ -79,7 +79,7 @@ export const ResumeSectionDateEvents = ({
           </ul>
         : <>
             {responsibilities
-              .filter(({ type }) => type.includes(filter) || filter === "tudo")
+              .filter(({ type }) => type.includes(filter) || filter === "sections.all")
               .map((responsibility, index) => (
                 <p
                   className=" text-sm text-gray-500 marker:text-gray-400 d:text-gray-300/80 d:marker:text-gray-600 print:!text-base"
