@@ -5,7 +5,7 @@ import { Image } from "components/image";
 import { Link } from "components/link";
 import clsx from "clsx";
 import { ResumeSection } from "components/resume/resume-section";
-import { ResumeSectionDateSidebar } from "components/resume/resume-section-data-sidebar";
+import { ResumeSectionDateSidebar } from "components/resume/resume-section-date-sidebar";
 import { ResumeSectionDateEvents } from "components/resume/resume-section-date-events";
 import { useResumeSectionInView } from "components/resume/use-resume-section-in-view";
 import { CV } from "content/cv";
