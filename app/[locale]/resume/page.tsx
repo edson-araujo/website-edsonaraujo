@@ -23,12 +23,6 @@ const Resume: FC = (props) => {
   const [inView, setInView] = useState("sections.all");
   const t = useTranslations("Resume");
   
-  const [yearTooltip, setYearTooltip] = useState('');
-
-  useEffect(() => {
-    setYearTooltip(`${Math.round((Date.now() - new Date("2002-02-28T01:30:00").getTime()) / 1000)} ${t("unitSecond")}`);
-  }, [t]);
-
   useEffect(() => {
     for (const key in sections) {
       const val = sections[key];
