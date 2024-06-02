@@ -22,14 +22,11 @@ export const Timeline: FC<TimelineProps> = ({}) => {
   useEffect(() => {
     if (!initiated && inView) {
       const container = scrollContainerRef.current as HTMLDivElement;
-      setTimeout(
-        () => {
-          const year = Object.keys(TIMELINEOBJECT)[0];
-          setInitiated(true);
-          setSelected(`${year}-${0}`);
-        },
-        50
-      );
+      setTimeout(() => {
+        const year = Object.keys(TIMELINEOBJECT)[0];
+        setInitiated(true);
+        setSelected(`${year}-${0}`);
+      }, 50);
     }
   }, [inView, initiated]);
 
@@ -41,7 +38,7 @@ export const Timeline: FC<TimelineProps> = ({}) => {
       const values = Object.values(TIMELINEOBJECT);
       const yearLength = keys.length;
       const yearIndex = keys.findIndex((key) => key === year);
-      const indexLength = TIMELINEOBJECT[year]?.length;
+      const indexLength = (TIMELINEOBJECT[year as keyof typeof TIMELINEOBJECT])?.length;
       const totalIndex =
         values.flat().findIndex((val) => new Date(val.date).getFullYear() === +year) + +index;
 
@@ -80,7 +77,7 @@ export const Timeline: FC<TimelineProps> = ({}) => {
   );
 
   return (
-    <section className="mx-auto  max-w-6xl px-4 pb-16 md:px-8">
+    <section className="mx-auto max-w-6xl px-4 pb-16 md:px-8">
       <div className="-mx-4 flex h-96 overflow-x-auto py-4 px-6 xl:mx-0" ref={scrollContainerRef}>
         {Object.entries(TIMELINEOBJECT).map(([year, events], yearIndex, years) => (
           <div key={year} className="relative">
@@ -100,7 +97,7 @@ export const Timeline: FC<TimelineProps> = ({}) => {
                     className={clsx("relative", selected === `${year}-${index}` && "selected")}
                   >
                     <button
-                      className=" absolute flex -translate-x-1/2 flex-col items-center px-3 hfa:outline-none"
+                      className="absolute flex -translate-x-1/2 flex-col items-center px-3 hfa:outline-none"
                       onMouseOver={() => {
                         setAutoScroll(false);
                         setSelected(`${year}-${index}`);
