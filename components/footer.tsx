@@ -1,11 +1,10 @@
 import { FC } from "react";
-import { Link } from "./link";
 import { SOCIAL_ACCOUNTS } from "@/content/social-accounts";
 import { useTranslations } from "next-intl";
+import { Link } from "./link";
+debugger
 
-type FooterProps = {};
-
-export const Footer: FC<FooterProps> = ({}) => {
+export const Footer: FC = () => {
   const t = useTranslations("Footer");
   debugger
   return (
@@ -16,10 +15,10 @@ export const Footer: FC<FooterProps> = ({}) => {
             <Link
               key={name}
               href={href}
-              className="p-1 text-gray-400 hover:text-gray-500 d:text-gray-600 d:hover:text-gray-500"
+              className="p-1 text-gray-400 hover:text-gray-500 d:text-gray-600 d:hover:text-gray-500 custom-link"
             >
               <span className="sr-only">{name}</span>
-              <Icon className="h-5 w-5" aria-hidden="true" />
+              <Icon className="h-5 w-5"/>
             </Link>
           ))}
         </div>

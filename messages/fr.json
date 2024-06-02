@@ -6,7 +6,7 @@
     "prev": "précédent",
     "next": "suivant"
   },
-  
+
   "Header": {
     "Home": "Accueil",
     "Sobre": "À propos",
@@ -22,8 +22,8 @@
   },
   "Footer": {
     "baseboard": "Edson Araújo, Tous droits réservés."
-  }, 
-  
+  },
+
   "SelectLanguage": {
     "title": "Sélectionnez la Langue",
     "english": "Anglais",
@@ -41,11 +41,12 @@
     "heading": "Je suis <strong>Edson Araújo</strong>, développeur Full Stack.",
     "tech": {
       "Java": "Java",
-      "Spring Boot": "Spring Boot",
+      "Spring": "Spring",
       "TypeScript": "TypeScript",
       "React": "React",
-      "Laravel": "Laravel"
+      "Next": "Next"
     },
+    "FollowLinkedin": "Suivez-moi sur LinkedIn",
     "body1": "J'adore écrire du code qui amène les choses au niveau supérieur, en créant des applications très performantes, des intégrations API automatisées et en créant des expériences utilisateur impressionnantes qui vous font sentir ",
     "body2": "Je suis toujours impatient d'apprendre et d'explorer de nouvelles technologies, frameworks et langages de programmation. Actuellement, j'apprends sur ",
     "and": "et",
@@ -65,10 +66,11 @@
       "Technology": "Passionné de Technologie"
     }
   },
-  "TwitterInfo": {
+  "InstagramInfo": {
     "description": "Étudier et partager des connaissances; Développement Web; Café, quotidien et quelques autres choses.",
     "Following": "Abonnements",
-    "Followers": "Abonnés"
+    "Followers": "Abonnés",
+    "Follow": "Suivre"
   },
 
   "Toast": {
@@ -257,20 +259,199 @@
           "description": "J'ai développé des projets avec Next.js, que j'ai aimé travailler avec."
         }
       }
-    }    
+    }
   },
 
   "Portfolio": {
     "pre": "Portafolio",
     "heading": "Mis proyectos.",
     "type": {
-      "allProjects": "Todos los proyectos",
+      "allProjects": "Tous les projets",
       "typescript": "Typescript",
-      "marketingSites": "Sitios de marketing",
-      "shopifyApps": "Aplicaciones de Shopify",
-      "ecommerceSites": "Sitios de comercio electrónico",
-      "integrations": "Integraciones",
-      "devtools": "Herramientas de desarrollo"
+      "javascript": "JavaScript",
+      "css": "CSS",
+      "integrations": "Intégrations",
+      "Java": "Java",
+      "Spring": "Spring",
+      "devtools": "Outils de développement",
+      "tailwind": "Tailwind",
+      "next": "Next",
+      "bootstrap": "Bootstrap",
+      "mysql": "MySql"
+    },
+    "Projects": {
+      "HelpDesk": {
+        "name": "HelpDesk",
+        "description": "Cette application est un système de gestion des tickets complet développé avec Spring et Java pour aider à l'administration des tickets."
+      },
+      "GameSecretNumber": {
+        "name": "Jeu du Nombre Secret",
+        "description": "C'est un jeu où vous devez deviner un nombre entre 0 et 1000 et essayer de trouver le nombre choisi par le système, en recevant uniquement des indices si c'est plus grand ou plus petit."
+      },
+      "BikeCraft": {
+        "name": "Site de Vente de Vélos",
+        "description": "Site pour une entreprise fictive de vente de vélos, très intéressant abordant divers concepts de UI/UX."
+      },
+      "RhSystem": {
+        "name": "Système RH",
+        "description": "Système développé pour le département des ressources humaines, avec des fonctionnalités pour l'enregistrement des employés, des départements et des postes, tous pouvant lister les éléments respectifs."
+      },
+      "SitePortfolio": {
+        "name": "Site Portfolio",
+        "description": "Site développé dans le but de montrer mon travail et mes projets personnels."
+      },
+      "CrudJava": {
+        "name": "CRUD en Java",
+        "description": "Projet de test développé avec Java, Struts, JavaScript et SQL et leurs relations."
+      }
+    },
+
+    "viewRepository": "Voir le dépôt",
+    "viewSite": "Voir le site"
+  },
+
+  "Resume": {
+    "sections": {
+      "all": "tout",
+      "relevant": "pertinent",
+      "techDev": "web / développement technologique",
+      "adm": "administration",
+      "introduction": "Introduction",
+      "experience": "Expérience",
+      "projects": "Projets",
+      "education": "Éducation",
+      "skills": "Compétences",
+      "certifications": "Certifications",
+      "references": "Références",
+      "interests": "Intérêts"
+    },
+    "cv": {
+      "name": "Edson Araújo",
+      "title": "Développeur Fullstack",
+      "address": "Santos, São Paulo - Brésil",
+      "email": "edsonaraujo.dev@gmail.com",
+      "website": "",
+      "mobile": "+55 13 98847-3945",
+      "intro": "Je suis un passionné de technologie, j'adore suivre le développement des nouvelles technologies et rester toujours à jour. J'aime beaucoup les films et les séries sur ce thème. De plus, j'aime transmettre mes connaissances, chercher de nouvelles façons de collaborer avec des personnes et des équipes enseignant la technologie. Je publie souvent du contenu sur mes réseaux sociaux pour démocratiser les connaissances en programmation. Vous pouvez me suivre et voir que j'adore sortir avec mes amis et ma famille, et que souvent la technologie sera l'un des sujets que j'aborde. Il est également important pour moi de suivre le développement des technologies web et du design UX, en écoutant des podcasts, en participant à des événements locaux, des conférences, en utilisant Twitter et Instagram.",
+      "education_1": {
+        "city": "Guarujá",
+        "country": "Brésil",
+        "institution": "E. E. Prefeito Domingos de Souza",
+        "certificate": "Lycée",
+        "level": "Éducation scolaire"
+      },
+      "education_2": {
+        "city": "Guarujá",
+        "country": "Brésil",
+        "institution": "Etec Alberto Santos Dumont",
+        "certificate": "Administration des entreprises",
+        "level": "Enseignement supérieur"
+      },
+      "education_3": {
+        "city": "Santos",
+        "country": "Brésil",
+        "institution": "Faculdade Descomplica",
+        "certificate": "Licence en génie informatique",
+        "level": "Enseignement supérieur"
+      },
+      "experience_1": {
+        "city": "Guarujá",
+        "country": "Brésil",
+        "company": "Bureau du Procureur Général de la Municipalité de Guarujá",
+        "title": "Assistant Administratif - Juridique",
+        "responsibility_1": "J'ai travaillé au développement de tableaux Excel pour l'administration des processus du secteur",
+        "responsibility_2": "Je distribuais et attribuais les processus aux avocats disponibles du secteur",
+        "responsibility_3": "J'ai fourni un service public en donnant des orientations sur le système judiciaire de la région",
+        "responsibility_4": "J'ai fourni un service téléphonique en donnant des orientations sur le système judiciaire de la région"
+      },
+      "experience_2": {
+        "city": "Santos",
+        "country": "Brésil",
+        "company": "Consultance, Planification et Études Environnementales",
+        "title": "Assistant Administratif - Tableau de bord",
+        "responsibility_1": "J'ai principalement travaillé à la création de tableaux de bord dans Excel et au développement de VBA.",
+        "responsibility_2": "J'ai occupé le poste d'Assistant Administratif, soutenant les équipes de collecte des déchets environnementaux.",
+        "responsibility_3": "J'ai créé des flux de travail avec le support de VBA Excel pour les équipes de gestion.",
+        "responsibility_4": "Support technique pour les équipements et leur gestion."
+      },
+      "experience_3": {
+        "city": "Santos",
+        "country": "Brésil",
+        "company": "AGE Technology",
+        "title": "Développeur Fullstack",
+        "responsibility_1": "J'ai élargi mon rôle avec l'implémentation de React dans le système, ce qui m'a donné l'opportunité de travailler avec ce framework.",
+        "responsibility_2": "Je suis devenu le représentant Front-end de mon équipe, partageant mes connaissances et les innovations de mes supérieurs dans ce domaine avec l'équipe.",
+        "responsibility_3": "Après quelques mois, j'ai eu l'opportunité de travailler en tant que Junior dans le même poste de Développeur Fullstack, élargissant mon rôle avec AWS, les services web et l'intégration d'API.",
+        "responsibility_4": "J'ai commencé en tant que stagiaire dans le poste de Développeur Fullstack, travaillant au développement de nouvelles fonctionnalités et fournissant un support dans le système de l'entreprise. Les technologies avec lesquelles je travaille sont Git, Java, JavaScript, Sass, jQuery, Struts, SQL et Materialize. Nous utilisons également Scrum pour la gestion des équipes."
+      },
+      "capabilities_languages_1": "Portugais - natif",
+      "capabilities_languages_2": "Anglais - Intermédiaire",
+      "capabilities_languages_3": "Français - basique",
+      "references_1": {
+        "author": "José Alberto dos Santos Silva",
+        "title": "Coordinateur",
+        "company": "Bureau du Procureur Général de la Municipalité de Guarujá",
+        "reference": "C'est avec une grande satisfaction que j'écris cette lettre pour recommander le professionnel Edson Araújo, qui a effectué son socio-apprentissage offert par CAMP Guarujá dans le secteur du Protocole du Bureau du Procureur Général de la Municipalité de février 2018 à mai 2019. À cet égard, je souligne son excellent développement dans le secteur, contribuant toujours avec empathie, flexibilité, initiative et ponctualité. De plus, parmi ses obligations, j'informe de sa performance en respectant toujours les délais, son aptitude et son agilité. Par conséquent, je recommande le professionnel susmentionné pour son rôle dans le secteur d'embauche et je notifie la contribution notable de ses compétences professionnelles, qui sont indubitablement pertinentes pour le développement de l'entreprise."
+      },
+      "references_2": {
+        "author": "Raphael de Almeida Tripodi",
+        "title": "Procureur Municipal",
+        "company": "Bureau du Procureur Général de la Municipalité de Guarujá",
+        "reference": "Par la présente lettre, je déclare, à toutes fins utiles, qu'Edson Araújo a effectué un stage dans cet organisme du 13/05/2019 à ce jour. Pendant ce temps, il a exercé ses activités dans l'unité de soutien administratif aux procureurs municipaux officiant dans le domaine judiciaire du bureau de ce Municipalité. Dans l'exercice de ses activités, il a toujours été très attentif, cordial et rapide dans le service, révélant toujours de l'enthousiasme et de la facilité à apprendre les procédures internes de notre organisation. Pendant ce temps, il a démontré être une personne honnête avec un grand potentiel de croissance."
+      },
+
+      "language": "Langues",
+      "programmingLanguage": "Langages de Programmation",
+      "Frameworks": "Bibliothèques & Frameworks",
+      "ServiceProviders": "Fournisseurs de Services",
+      "Platforms": "Plateformes",
+      "Tools": "Outils"
+    },
+
+    "FilterView": "Vue de Filtre:"
+  },
+
+  "Links": {
+    "bio": "Je développe des applications interactives et haute performance.",
+    "contateMe": "Contactez-moi",
+    "GridItems": {
+      "gridItem_1": {
+        "description": "Mon LinkedIn pour plus d'informations sur ma carrière et ma vie professionnelle.",
+        "title": "LinkedIn",
+        "buttonTitle": "Suivre"
+      },
+      "gridItem_2": {
+        "description": "",
+        "title": "Instagram",
+        "buttonTitle": "Suivre"
+      },
+      "gridItem_3": {
+        "description": "",
+        "title": "GitHub",
+        "buttonTitle": "Suivre"
+      },
+      "gridItem_4": {
+        "description": "Développeur Full-stack / Ingénieur en informatique, profil anglais et je suis brésilien.",
+        "title": "Twitter",
+        "buttonTitle": "Suivre"
+      },
+      "gridItem_5": {
+        "title": "Code Propre : Compétences Pratiques de l'Artisanat Logiciel Agile"
+      },
+      "gridItem_6": {
+        "title": "Head First Java"
+      },
+      "gridItem_7": {
+        "title": "Site Web d'Edson Araújo"
+      },
+      "gridItem_8": {
+        "title": "Forfait Full-Stack",
+        "description": "Apprenez à être plus qu'un simple programmeur complet.",
+        "buttonTitle": "S'inscrire"
+      },
+      "gridItem_9": {
+        "title": "Come Around Me"
+      }
     }
   }
 }

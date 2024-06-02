@@ -1,10 +1,10 @@
 // @ts-ignore
 import heroCode from "!!raw-loader!content/code-blocks/heroCode.tsx"; // Adding `!!` to a request will disable all loaders specified in the configuration
 import { Link } from "components/link";
-import party from "party-js";
-import { DiJava } from "react-icons/di";
 import { SiLaravel, SiReact, SiSpring, SiTypescript } from "react-icons/si";
 import { useTranslations } from 'next-intl';
+import { RiNextjsFill } from "react-icons/ri";
+import { LiaJava } from "react-icons/lia";
 
 interface IconProps {
   className: string;
@@ -21,10 +21,10 @@ export const useHeroContent = () => {
     tech: [
       {
         name: t('tech.Java'),
-        Icon: ({ className }: IconProps) => <DiJava className={className} />,
+        Icon: ({ className }: IconProps) => <LiaJava className={className} />,
       },
       {
-        name: t('tech.Spring Boot'),
+        name: t('tech.Spring'),
         Icon: ({ className }: IconProps) => <SiSpring className={className} />,
       },
       {
@@ -36,8 +36,8 @@ export const useHeroContent = () => {
         Icon: ({ className }: IconProps) => <SiReact className={className} />,
       },
       {
-        name: t('tech.Laravel'),
-        Icon: ({ className }: IconProps) => <SiLaravel className={className} />,
+        name: t('tech.Next'),
+        Icon: ({ className }: IconProps) => <RiNextjsFill className={className} />,
       }
     ],
     body: '',

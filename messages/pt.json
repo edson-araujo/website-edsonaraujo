@@ -21,7 +21,7 @@
   },
   "Footer": {
     "baseboard": "Edson Araújo, Todos os direitos reservados."
-  }, 
+  },
   "SelectLanguage": {
     "title": "Selecione o Idioma",
     "english": "Inglês",
@@ -38,11 +38,12 @@
     "heading": "Eu sou <strong>Edson Araújo</strong>, desenvolvedor Full Stack.",
     "tech": {
       "Java": "Java",
-      "Spring Boot": "Spring Boot",
+      "Spring": "Spring",
       "TypeScript": "TypeScript",
       "React": "React",
-      "Laravel": "Laravel"
+      "Next": "Next"
     },
+    "FollowLinkedin": "Me acompanhe no Linkedin",
     "body1": "Eu amo escrever código que leva as coisas para o próximo nível, criando aplicações altamente performáticos, integrações de API automatizadas e criando experiências de usuário impressionantes que fazem você sentir-se ",
     "body2": "Eu estou sempre ansioso para aprender e explorar novas tecnologias, frameworks e linguagens de programação. Atualmente, estou aprendendo sobre ",
     "and": "e",
@@ -62,10 +63,11 @@
       "Technology": "Entusiasta de Tecnologia"
     }
   },
-  "TwitterInfo": {
+  "InstagramInfo": {
     "description": "Estudando e compartilhando conhecimento; Desenvolvimento Web; Café, cotidiano e algumas outras coisas.",
     "Following": "Seguindo",
-    "Followers": "Seguidores"
+    "Followers": "Seguidores",
+    "Follow": "Seguir"
   },
   "Toast": {
     "copyCode": "Código copiado para a área de transferência"
@@ -260,12 +262,190 @@
     "type": {
       "allProjects": "Todos os projetos",
       "typescript": "Typescript",
-      "marketingSites": "Marketing Sites",
-      "shopifyApps": "Shopify Apps",
-      "ecommerceSites": "Ecommerce Sites",
+      "javascript": "JavaScript",
+      "css": "CSS",
       "integrations": "Integrações",
-      "devtools": "Devtools"
+      "Java": "Java",
+      "Spring": "Spring",
+      "devtools": "Devtools",
+      "tailwind": "Tailwind",
+      "next": "Next",
+      "bootstrap": "Bootstrap",
+      "mysql": "MySql"
+    },
 
+    "Projects": {
+      "HelpDesk": {
+        "name": "HelpDesk",
+        "description": "Esta aplicação é um sistema de Atendimendo de chamados, bem completo desenvolvido com Spring e Java para auxiliar na administração de chamados."
+      },
+      "GameSecretNumber": {
+        "name": "Jogo Número Secreto",
+        "description": "Este é um jogo que você fala um número entre 0 e 1000 e precisa adivinhar qual o número do jogo que o sistema escolheu, recebendo apenas dicas se é maior ou menor."
+      },
+      "BikeCraft": {
+        "name": "Site Vendas de Biciletas",
+        "description": "Site para uma empresa de Vendas de Bicicletas fictícia, bem interessante abordando vários conceitos de UI/UX."
+      },
+      "RhSystem": {
+        "name": "Sistema de RH",
+        "description": "Sistema desenvolvido para o setor de Recursos Humanos, com as funcionalidades de  cadastro de funcionários, setores e cargos e todos podendo listar os respectivos itens."
+      },
+      "SitePortfolio": {
+        "name": "Site Portfólio",
+        "description": "Site desenvolvido com o intuito de mostrar meu trabalho e meus projetos pessoais."
+      },
+      "CrudJava": {
+        "name": "CRUD em Java",
+        "description": "Projeto de teste desenvolvido com Java, Struts. JavaScript e SQL e seus relacionamentos."
+      }
+    },
+
+    "viewRepository": "Ver repositório",
+    "viewSite": "Ver site"
+  },
+
+  "Resume": {
+    "sections": {
+      "all": "tudo",
+      "relevant": "relevante",
+      "techDev": "web / tech dev",
+      "adm": "administração",
+      "introduction": "Introdução",
+      "experience": "Experiência",
+      "projects": "Projetos",
+      "education": "Educação",
+      "skills": "Habilidades",
+      "certifications": "Certificações",
+      "references": "Referências",
+      "interests": "Interesses"
+    },
+    "cv": {
+      "name": "Edson Araújo",
+      "title": "Desenvolvedor Fullstack",
+      "address": "Santos, São Paulo - Brasil",
+      "email": "edsonaraujo.dev@gmail.com",
+      "website": "",
+      "mobile": "+55 13 98847-3945",
+      "intro": "Sou um entusiasta da tecnologia, adoro acompanhar o desenvolvimento de novas tecnologias e sempre estar me atualizando. Gosto bastante de filmes e séries nessa temática. Além disso, gosto de passar meu conhecimento adiante, buscando novas formas de colaborar com pessoas e times de ensino da tecnologia. Costumo postar conteúdos em minhas redes sociais para democratizar o conhecimento da programação. Você pode me acompanhar e observar que adoro sair com meus amigos e familiares e muitas vezes tecnologia será um dos meus assuntos abordados. Também é importante para mim acompanhar o desenvolvimento da tecnologia web e do design de UX, ouvindo podcasts, participando de eventos locais, conferências, utilizando o Twitter e o Instagram.",
+      "education_1": {
+        "city": "Guarujá",
+        "country": "Brasil",
+        "institution": "E. E. Prefeito Domingos de Souza",
+        "certificate": "Ensino médio",
+        "level": "Ensino Escolar"
+      },
+      "education_2": {
+        "city": "Guarujá",
+        "country": "Brasil",
+        "institution": "Etec Alberto Santos Dumont",
+        "certificate": "Administração de Empresas",
+        "level": "Ensino Superior"
+      },
+      "education_3": {
+        "city": "Santos",
+        "country": "Brasil",
+        "institution": "Faculdade Descomplica",
+        "certificate": "Faculdade Engenharia da Computação",
+        "level": "Ensino Superior"
+      },
+      "experience_1": {
+        "city": "Guarujá",
+        "country": "Brasil",
+        "company": "Advocacia Geral do Município de Guarujá",
+        "title": "Assistente Administrativo - Jurídico",
+        "responsibility_1": "Atuei com o desenvolvimento de planílhas em Excel para a administração de processos do setor",
+        "responsibility_2": "Realizava a distribuição e a atribuição dos processos para os advnogados disponíveis do setor",
+        "responsibility_3": "Realizava atendimento ao público dando orientações à repseito do judiciário da comarca.",
+        "responsibility_4": "Realizava atendimento telefônico dando orientações à repseito do judiciário da comarca"
+      },
+      "experience_2": {
+        "city": "Santos",
+        "country": "Brasil",
+        "company": "Consultoria, Planejamento e Estudos Ambientais",
+        "title": "Assistente Administrativo - Dashboard",
+        "responsibility_1": "Atuei principalmente na elaboração de Dashboards no Excel e desenvolvimento de VBA.",
+        "responsibility_2": "Exerci o cargo de Assistente administrativo dando suporte as equipes de coletas de residuos ambiental.",
+        "responsibility_3": "Elaborei fluxos de trabalho com o suporte de VBA do Excel para as equipes de gestão.",
+        "responsibility_4": "Suporte técnico de equipamentos e gestão dos mesmo."
+      },
+      "experience_3": {
+        "city": "Santos",
+        "country": "Brasil",
+        "company": "AGE Technology",
+        "title": "Desenvolvedor Fullstack",
+        "responsibility_1": "Expandi minha atuação também com a implementação do React no sistema, com isso tive a oportunidade de trabalhar com esse framework",
+        "responsibility_2": "Tornei-me o representante de Front-end da minha equipe e pude disseminar meu conhecimento e as inovações dos meus superiores nessa área para a equipe em que estava.",
+        "responsibility_3": "Após alguns meses, recebi a oportunidade de atuar como Júnior no mesmo cargo de desenvolvedor Fullstack, ampliando minha atuação com AWS, web services e integração com APIs",
+        "responsibility_4": "Iniciei como Trainee no cargo de desenvolvedor Fullstack, trabalhando no desenvolvimento de novas funcionalidades e prestando suporte no sistema da empresa. As tecnologias com as quais atuo são Git, Java, JavaScript, Sass, jQuery, Struts, SQL e Materialize. Além disso usamos o Scrum para gerenciamento das equipes."
+      },
+      "capabilities_languages_1": "Português - nativo",
+      "capabilities_languages_2": "Inglês - Intermediário",
+      "capabilities_languages_3": "Francês - básico",
+      "references_1": {
+        "author": "José Alberto dos Santos Silva",
+        "title": "Coordenador",
+        "company": "Advocacia Geral do Município de Guarujá",
+        "reference": "É com muita satisfação que venho através desta carta recomendar o profissional Edson Araújo que exerceu a sua socioaprendizagem ofertada pelo CAMP Guarujá no setor de Protocolo da Advocacia Geral do Município durante o período de fevereiro de 2018 até maio de 2019. Diante disso, destaco o seu excelente desenvolvimento no setor contribuindo sempre com empatia, flexibilidade, iniciativa e pontualidade. Ademais, dentre suas obrigações, informo o seu desempenho cumprindo sempre com os seus prazos, aptidão e agilidade. Recomendo então, o profissional supracitado, pelo seu papel desempenhado no setor contratante e notifico a notável contribuição de suas habilidades profissionais as quais são indubitáveis a relevância para o desenvolvimento da a empresa contratante."
+      },
+      "references_2": {
+        "author": "Raphael de Almeida Tripodi",
+        "title": "Procurador Municipal",
+        "company": "Advocacia Geral do Município de Guarujá",
+        "reference": "Pela presente carta, declaro, para os devidos fins, que Edson Araújo, estagiou neste órgão de 13/05/2019 até o presente. Durante esse tempo, desempenhou suas atividades na unidade de apoio administrativo aos procuradores municipais oficiantes na área judicial da procuradoria deste Município. No desempenho de suas atividades sempre foi muito atencioso, cordial e ágil no atendimento, revelando, sempre, entusiasmo e facilidade no aprendizado dos procedimentos internos de nossa organização. Durante todo esse tempo demonstrou ser uma idonea e com grande potencial de crescimento."
+      },
+      "language": "Idiomas",
+      "programmingLanguage": "Linguagens de Programação",
+      "Frameworks": "Bibliotecas & Frameworks",
+      "ServiceProviders": "Provedores de Serviços",
+      "Platforms": "Plataformas",
+      "Tools": "Ferramentas"
+    },
+
+    "FilterView": "Visualização de Filtro:"
+  },
+
+  "Links": {
+    "bio": "Desenvolvo aplicações interativas e de altas perfomances.",
+    "contateMe": "Contate-me ",
+    "GridItems": {
+      "gridItem_1": {
+        "description": "Meu Linkedin para mais informações a respeito da minha carreira e vida profissional.",
+        "title": "Linkedin",
+        "buttonTitle": "Seguir"
+      },
+      "gridItem_2": {
+        "description": "",
+        "title": "Instagram",
+        "buttonTitle": "Seguir"
+      },
+      "gridItem_3": {
+        "description": "",
+        "title": "Github",
+        "buttonTitle": "Seguir"
+      },
+      "gridItem_4": {
+        "description": "Full-stack Developer / Computer Engineer, English profile and I am Brazilian.",
+        "title": "Twitter",
+        "buttonTitle": "Seguir"
+      },
+      "gridItem_5": {
+        "title": "Código limpo: habilidades práticas do Agile software"
+      },
+      "gridItem_6": {
+        "title": "Use a cabeça! Java: Java"
+      },
+      "gridItem_7": {
+        "title": "Website Edson Araújo"
+      },
+      "gridItem_8": {
+        "title": "Pacote Full-Stack",
+        "description": "Aprenda a ser um programador mais do que completo.",
+        "buttonTitle": "Matricular"
+      },
+      "gridItem_9": {
+        "title": "Come Around Me"
+      }
     }
   }
 }

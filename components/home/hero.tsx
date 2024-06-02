@@ -14,7 +14,7 @@ import { SocialIcon } from "react-social-icons";
 import { Badge } from "../badge";
 import { CodeEditor } from "../code-editor";
 import ToggleSwitch from "../toggle-switch";
-import { TwitterProfile } from "../twitter-profile";
+import { InstagramProfile } from "../instagram-profile";
 import { useHeroContent } from "../home/heroContent";
 import { useTranslations } from "next-intl";
 import party from "party-js";
@@ -23,7 +23,7 @@ import { IoLogoLinkedin } from "react-icons/io5";
 import { FaLinkedinIn } from "react-icons/fa";
 
 type HeroProps = {
-  twitterData: {
+  instagramData: {
     profile_image_url: string;
     name: string;
     username: string;
@@ -33,7 +33,7 @@ type HeroProps = {
   };
 };
 
-export const Hero: FC<{ twitterData: any }> = ({ twitterData }) => {
+export const Hero: FC<{ instagramData: any }> = ({ instagramData }) => {
   const { theme, setTheme } = useTheme();
   const HERO = useHeroContent();
   const t = useTranslations("Hero");
@@ -136,7 +136,7 @@ export const Hero: FC<{ twitterData: any }> = ({ twitterData }) => {
                 target="_blank"
                 href="https://www.linkedin.com/in/edson-alves-araujo/"
                 className="group flex items-center justify-center rounded-full border-2 border-gray-400/50 bg-gray-100 bg-clip-padding px-3 py-1.5 text-sm font-medium text-primary-800 transition-all hfa:border-primary-800/30 hfa:bg-primary-800 hfa:text-white d:bg-gray-700 d:text-gray-50 d:hfa:bg-primary-800"
-                data-tip="Me acompanhe no Linkedin"
+                data-tip={t("FollowLinkedin")}
               >
                 <span className="p-1 rounded-full bg-primary-800">
                   <FaLinkedinIn color="white" fontSize="0.7em" />
@@ -163,7 +163,7 @@ export const Hero: FC<{ twitterData: any }> = ({ twitterData }) => {
             </div>
           </div>
           <div className="absolute hidden sm:-right-5 sm:top-24 sm:block lg:-left-64 lg:top-full">
-            <TwitterProfile {...twitterData} />
+            <InstagramProfile {...instagramData} />
           </div>
         </section>
         <div className="background pointer-events-none absolute inset-0 -z-30 z-0 select-none">

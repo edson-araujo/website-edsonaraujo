@@ -26,6 +26,7 @@ import Vend from "public/icons/tech-logos/vend_pos.svg";
 import NextJs from "public/icons/tech-logos/nextjs.svg";
 import Express from "public/icons/tech-logos/express.svg";
 import Liquid from "public/icons/tech-logos/liquid.svg";
+import { SiBootstrap } from "react-icons/si";
 
 type IconProps = React.HTMLAttributes<SVGElement>;
 
@@ -347,7 +348,7 @@ export const TECH = {
     Icon: ({ className }: IconProps) => <NextJs className={className} />,
   },
   springboot: {
-    name: "Spring Boot",
+    name: "Spring",
     Icon: ({ className }: IconProps) => <NextJs className={className} />,
   },
   laravel: {
@@ -361,5 +362,9 @@ export const TECH = {
   eclipse: {
     name: "Eclipse Idea",
     Icon: ({ className }: IconProps) => <NextJs className={className} />,
+  },
+  bootstrap: {
+    name: "Bootstrap",
+    Icon: ({ className }: IconProps) => <SiBootstrap className={className} />,
   },
 } as const;

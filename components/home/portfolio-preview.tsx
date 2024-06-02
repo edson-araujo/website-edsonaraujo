@@ -14,7 +14,7 @@ import { useTranslations } from "next-intl";
 type PortfolioPreviewProps = {};
 
 export const PortfolioPreview: FC<PortfolioPreviewProps> = ({}) => {
-  const [filter, setFilter] = useState("Todos os projetos");
+  const [filter, setFilter] = useState("type.allProjects");
   const t = useTranslations("Portfolio");
   return (
     <section id="portfolio" className="portfolio-preview mb-24 min-h-full spacing-4">
@@ -37,7 +37,7 @@ export const PortfolioPreview: FC<PortfolioPreviewProps> = ({}) => {
                       className="peer hidden"
                       defaultChecked={index === 0}
                       name="Tag Filter"
-                      value={typeTranslate}
+                      value={type}
                     />
                     <div className="cursor-pointer appearance-none whitespace-nowrap rounded-full border border-gray-200 bg-gray-400/10 px-3 py-1 text-[13px] font-medium text-gray-400 transition-colors peer-checked:text-gray-900 hfa:text-gray-500 d:border-gray-700 d:peer-checked:text-gray-50 d:hfa:text-gray-300">
                       {typeTranslate}
@@ -52,7 +52,7 @@ export const PortfolioPreview: FC<PortfolioPreviewProps> = ({}) => {
       <ScrollGallery itemWidth={340} gapWidth={32} filter={filter}>
         {PROJECTS.map((project, index) => {
           const rotationIndex = PROJECTS.filter(
-            ({ type }) => filter === "Todos os projetos" || type.includes(filter)
+            ({ type }) => filter === "type.allProjects" || type.includes(filter)
           ).findIndex(({ name }) => project.name === name);
 
           return (
@@ -60,11 +60,11 @@ export const PortfolioPreview: FC<PortfolioPreviewProps> = ({}) => {
               key={project.name}
               className={clsx(
                 "relative h-[380px] w-[340px] min-w-[340px] snap-start rounded-xl border-2 border-gray-700/30 bg-clip-padding p-4 shadow-xl transition-[min-width,width,margin-left,opacity] duration-300 spacing-0 d:border-white/20",
-                filter === "Todos os projetos" || project.type.includes(filter)
+                filter === "type.allProjects" || project.type.includes(filter)
                   ? "flex"
                   : "-ml-8 !w-0 !min-w-0 !overflow-hidden !border-0 !px-0 opacity-20",
-                rotationIndex % 2 === 0 && "sm:rotate-[1.5deg]",
-                rotationIndex % 2 === 1 && "sm:rotate-[-1.5deg]",
+                rotationIndex % 2 === 0,
+                rotationIndex % 2 === 1,
                 index % 8 === 0 &&
                   "bg-[linear-gradient(40deg,var(--tw-gradient-stops))] from-pink-300/80 to-violet-500/40 shadow-[currentBg] shadow-violet-500/20",
                 index % 8 === 1 &&
@@ -96,7 +96,7 @@ export const PortfolioPreview: FC<PortfolioPreviewProps> = ({}) => {
               </figure>
               <header>
                 <h2 className="text-2xl font-bold tracking-tighter text-gray-800 d:text-white">
-                  {project.name}
+                  {t(project.name)}
                 </h2>
                 <div className="-ml-0.5 mt-0.5 flex items-center gap-2 tracking-tight text-gray-600 d:text-gray-200">
                   {project.tech?.map(({ name, Icon }, i) => {
@@ -113,7 +113,7 @@ export const PortfolioPreview: FC<PortfolioPreviewProps> = ({}) => {
                 </div>
               </header>
               <main className="mt-2 text-[15px] tracking-tight text-gray-600 d:text-gray-200 ">
-                <p className="line-clamp-4">{project.description}</p>
+                <p className="line-clamp-4">{t(project.description)}</p>
               </main>
               <footer className="absolute bottom-3 left-0 mt-auto flex w-full items-end justify-end gap-2 px-4">
                 <div className="mr-auto text-sm font-semibold text-gray-700/80 d:text-gray-300/80">
@@ -124,7 +124,7 @@ export const PortfolioPreview: FC<PortfolioPreviewProps> = ({}) => {
                       target="_blank"
                       href={project.repository}
                       className="p-1 text-gray-700/80 transition-all hfa:text-gray-900 d:text-gray-300/80 d:hfa:text-gray-50"
-                      data-tip="View repository"
+                      data-tip={t("viewRepository")}
                     >
                       <span className="sr-only">Link to Github repository</span>
                       <FaGithub className="h-5 w-5 " />
@@ -135,7 +135,7 @@ export const PortfolioPreview: FC<PortfolioPreviewProps> = ({}) => {
                       target="_blank"
                       href={project.url}
                       className="p-1 text-gray-700/80 transition-all hfa:text-gray-900 d:text-gray-300/80 d:hfa:text-gray-50"
-                      data-tip="View site"
+                      data-tip={t("viewSite")}
                     >
                       <span className="sr-only">Link to Project</span>
                       <LinkIcon className="h-5 w-5 " />

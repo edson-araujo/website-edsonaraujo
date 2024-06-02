@@ -6,15 +6,14 @@ import { NextIntlClientProvider, useMessages } from "next-intl";
 import { ThemeProvider } from "next-themes";
 import { Header } from "@/components/header/header";
 import { Footer } from "@/components/footer";
-import "@/style/globals.css";
 import Head from "next/head";
 import { Favicon } from "@/components/_document/favicon";
+import "@/style/globals.css";
 
 export const metadata: Metadata = {
   title: "Edson Araújo - Fullstack Developer - Java, Spring, React",
   description: "Eu sou o Edson Araújo, desenvolvedor FullStack, tecnologia sprincipais Java, Spring, React",
 };
-
 export default function RootLayout({
   children,
   params: { locale },
@@ -23,8 +22,10 @@ export default function RootLayout({
   params: { locale: string };
 }>) {
   const messages = useMessages();
+  debugger
+
   return (
-    <html lang="pt">
+    <html lang="pt" suppressHydrationWarning>
       <head>
        <Favicon/>
       </head>
@@ -40,7 +41,7 @@ export default function RootLayout({
               {" "}
               <LoadInitialData>{children}</LoadInitialData>
             </main>
-            <Footer />
+            <Footer/>
           </ContextProviders>
         </NextIntlClientProvider>
       </body>

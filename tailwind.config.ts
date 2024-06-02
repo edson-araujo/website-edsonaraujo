@@ -202,7 +202,6 @@ const config: Config = {
     require("@tailwindcss/forms"),
     require("@tailwindcss/typography"),
     require("@tailwindcss/aspect-ratio"),
-    require("@tailwindcss/line-clamp"),
     require("tailwind-children"),
     require("tailwind-gradient-mask-image"),
     plugin(({ addVariant, addUtilities, addComponents }) => {

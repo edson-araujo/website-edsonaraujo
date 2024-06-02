@@ -4,7 +4,7 @@ import { useTooltipStore } from "components/_stores/tooltip-store";
 import { Image } from "components/image";
 import { ABOUT } from "content/about";
 import { useTranslations } from "next-intl";
-import { FC, useCallback, useRef, useState } from "react";
+import { FC, useCallback, useRef, useState, useEffect } from "react";
 
 type AboutProps = {};
 
@@ -15,6 +15,12 @@ export const About: FC<AboutProps> = (props) => {
   const [tooltip, setTooltip] = useTooltipStore();
   const buttonRef = useRef<HTMLButtonElement>(null);
   const t = useTranslations("About");
+
+  const [yearTooltip, setYearTooltip] = useState('');
+
+  useEffect(() => {
+    setYearTooltip(`${Math.round((Date.now() - new Date("2002-02-28T01:30:00").getTime()) / 1000)} ${t("unitSecond")}`);
+  }, [t]);
 
   const handleImageClick = useCallback(() => {
     setTooltip(false);
@@ -98,7 +104,7 @@ export const About: FC<AboutProps> = (props) => {
         <section className="spacing-8">
           <header className="grid max-w-xl grid-cols-2 gap-4 text-center sm:grid-cols-4 sm:text-left">
             {ABOUT.stats.map(({ statistic, caption, tooltip }, index) => {
-              const dataTip = caption === "year"? tooltip + t("unitSecond") : t(tooltip) 
+              const dataTip = caption === "year" ? yearTooltip : t(tooltip) 
               return (
                 <figure
                   key={caption + index}

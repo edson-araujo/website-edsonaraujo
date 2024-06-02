@@ -10,9 +10,7 @@ export const ABOUT = {
       statistic: `${
         new Date(Date.now() - new Date("2002-02-28T01:30:00").getTime()).getFullYear() - 1970
       }`,
-      tooltip: `${Math.round(
-        (Date.now() - new Date("2002-02-28T01:30:00").getTime()) / 1000
-      )}`,
+      tooltip: "",
       caption: "year",
     },
     {

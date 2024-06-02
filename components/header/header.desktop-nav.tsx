@@ -1,5 +1,4 @@
 import clsx from "clsx";
-import { useRouter } from "next/router";
 import { FC } from "react";
 import { Link } from "../link";
 import { HoverEffect } from "./header.desktop-nav.hover-effect";
@@ -7,10 +6,22 @@ import { HEADER } from "../../content/pages";
 import { useLocale, useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
 
+const removeLocalePrefix = (path: string, locale: string) => {
+  const regex = new RegExp(`^/${locale}`);
+  if (regex.test(path)) {
+    return path.replace(regex, '');
+  }
+  return path;
+};
+
 export const DesktopNav: FC = () => {
   const locale = useLocale();
   const pathname = usePathname();
   const t = useTranslations('Header');
+
+  if (!pathname) {
+    return null; // ou renderizar um fallback adequado
+  }
 
   return (
     <>
@@ -19,7 +30,8 @@ export const DesktopNav: FC = () => {
         {HEADER.nav
           .filter(({ desktop }) => desktop)
           .map((link, i) => {
-            const isActive = pathname.split(/[#?]/)[0] === link.href;
+            const currentPath = removeLocalePrefix(pathname.split(/[#?]/)[0], locale);
+            const isActive = currentPath === link.href;
             return (
               <div
                 className="my-auto flex h-full items-center px-2"

@@ -3,7 +3,7 @@ import FlextLogo from "public/logo.svg";
 export const HEADER = {
   nav: [
     {
-      href: "/",
+      href: "",
       title: "Home",
       alt: "AltHome",
       desktop: true,
