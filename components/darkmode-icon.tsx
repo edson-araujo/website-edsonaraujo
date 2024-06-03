@@ -1,9 +1,13 @@
 import { useTheme } from "next-themes";
-import { FC } from "react";
+import { FC, useEffect, useState } from "react";
 
 const DarkmodeIcon: FC = () => {
-  const { theme } = useTheme();
-  const isDark = theme === "dark";
+  const { theme, resolvedTheme } = useTheme();
+  const [isDark, setIsDark] = useState(false);
+
+  useEffect(() => {
+    setIsDark(resolvedTheme === "dark");
+  }, [resolvedTheme]);
 
   return (
     <div>
