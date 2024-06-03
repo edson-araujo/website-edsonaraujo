@@ -121,7 +121,7 @@ export const Hero: FC<{ instagramData: any }> = ({ instagramData }) => {
         </section>
         <section className="relative md:h-[420px]">
           <div className="relative flex h-full min-w-[460px] flex-col gap-4 sm:min-w-[660px] lg:absolute lg:left-6 lg:left-8 lg:top-16 lg:top-24 lg:min-w-[460px]">
-            <div className="relative z-20 flex justify-end gap-1.5">
+            <div className="relative z-20 flex justify-start gap-1.5">
               <Badge style="info">{t("Badge.Cinephile")}</Badge>
               <Badge style="success">{t("Badge.Geek")}</Badge>
               <Badge style="warning">{t("Badge.Gym")}</Badge>
