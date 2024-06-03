@@ -48,29 +48,27 @@ export const Code: FC<CodeGroupProps> = ({ language, plugins, lineHighlight, cod
 
   useEffect(() => {
     loadDependencies();
-  }, [language, loadDependencies]);
+  }, [loadDependencies]);
 
   return (
     <pre
       className={clsx(
         `language-${language}`,
-        plugins,
-        lineHighlight && "line-highlight",
-        className
+        className,
+        plugins?.map(plugin => plugin),
+        lineHighlight && "line-highlight"
       )}
       data-line={lineHighlight}
       tabIndex={-1}
     >
-      {(Array.isArray(code) ? code : [code]).map((code, index) => {
-        return (
-          <Fragment key={index}>
-            <code className={`language-${language}`} data-selected-index={index}>
-              {code}
-            </code>
-            {`\n`}
-          </Fragment>
-        );
-      })}
+      {(Array.isArray(code) ? code : [code]).map((codeBlock, index) => (
+        <Fragment key={index}>
+          <code className={`language-${language}`} data-selected-index={index}>
+            {codeBlock}
+          </code>
+          {`\n`}
+        </Fragment>
+      ))}
     </pre>
   );
 };

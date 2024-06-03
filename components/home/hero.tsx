@@ -119,6 +119,9 @@ export const Hero: FC<{ instagramData: any }> = ({ instagramData }) => {
             ) : null}
           </footer>
         </section>
+        <div className="background pointer-events-none absolute inset-0 select-none">
+          <div className="relative top-1/2 left-1/2 h-2/3 w-1/2 -translate-y-[30%] rounded-full bg-gradient-radial from-cyan-500/30 to-sky-600/30 blur-3xl"></div>
+        </div>
         <section className="relative md:h-[420px]">
           <div className="relative flex h-full min-w-[460px] flex-col gap-4 sm:min-w-[660px] lg:absolute lg:left-6 lg:left-8 lg:top-16 lg:top-24 lg:min-w-[460px]">
             <div className="relative z-20 flex justify-start gap-1.5">
@@ -166,9 +169,7 @@ export const Hero: FC<{ instagramData: any }> = ({ instagramData }) => {
             <InstagramProfile {...instagramData} />
           </div>
         </section>
-        <div className="background pointer-events-none absolute inset-0 select-none">
-          <div className="relative top-1/2 left-1/2 h-2/3 w-1/2 -translate-y-[30%] rounded-full bg-gradient-radial from-cyan-500/30 to-sky-600/30 blur-3xl"></div>
-        </div>
+        
       </div>
     </section>
   );
