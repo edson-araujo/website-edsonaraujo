@@ -166,8 +166,8 @@ export const Hero: FC<{ instagramData: any }> = ({ instagramData }) => {
             <InstagramProfile {...instagramData} />
           </div>
         </section>
-        <div className="background pointer-events-none absolute inset-0 -z-30 z-0 select-none">
-          <div className="w-/4 relative left-1/2  top-1/2 h-2/4 -translate-y-[30%] rounded-full bg-gradient-radial from-cyan-500/30 to-sky-600/30 blur-3xl"></div>
+        <div className="background pointer-events-none absolute inset-0 select-none">
+          <div className="relative top-1/2 left-1/2 h-2/3 w-1/2 -translate-y-[30%] rounded-full bg-gradient-radial from-cyan-500/30 to-sky-600/30 blur-3xl"></div>
         </div>
       </div>
     </section>

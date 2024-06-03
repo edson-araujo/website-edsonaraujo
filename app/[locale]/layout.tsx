@@ -10,6 +10,7 @@ import Head from "next/head";
 import { Favicon } from "@/components/_document/favicon";
 import { Analytics } from "@vercel/analytics/react"
 import "@/style/globals.css";
+import "@/style/prism.scss";
 
 export const metadata: Metadata = {
   title: "Edson Araújo - Fullstack Developer - Java, Spring, React",

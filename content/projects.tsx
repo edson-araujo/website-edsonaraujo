@@ -15,7 +15,7 @@ export const PROJECTS = [
     description:"Projects.SitePortfolio.description",
     featuredImage: SitePortfolio,
     year: "2024",
-    repository: "https://github.com/edson-araujo/sistemaRH",
+    repository: "https://github.com/edson-araujo/website-edsonaraujo",
   },
   {
     name: "Projects.RhSystem.name",

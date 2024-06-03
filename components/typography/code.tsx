@@ -1,5 +1,5 @@
 import clsx from "clsx";
-
+import { highlightAll } from "prismjs";
 import { FC, Fragment, useCallback, useEffect } from "react";
 
 export type CodeGroupProps = {
@@ -22,12 +22,40 @@ export type CodeGroupProps = {
 };
 
 export const Code: FC<CodeGroupProps> = ({ language, plugins, lineHighlight, code, className }) => {
+  const loadDependencies = useCallback(async () => {
+    if (language === "tsx") {
+      await import(`prismjs/components/prism-jsx`);
+      await import(`prismjs/components/prism-typescript`);
+    }
+    if (language === "html") {
+      await import(`prismjs/components/prism-markup`);
+    }
+    if (language !== "html") {
+      await import(`prismjs/components/prism-${language}`);
+    }
+    if (plugins?.includes("line-numbers")) {
+      await import("prismjs/plugins/line-numbers/prism-line-numbers.js");
+    }
+    if (plugins?.includes("highlight-keywords")) {
+      await import("prismjs/plugins/highlight-keywords/prism-highlight-keywords.js");
+    }
+    if (lineHighlight) {
+      await import("prismjs/plugins/line-highlight/prism-line-highlight.js");
+    }
+
+    highlightAll();
+  }, [language, lineHighlight, plugins]);
+
+  useEffect(() => {
+    loadDependencies();
+  }, [language, loadDependencies]);
+
   return (
     <pre
       className={clsx(
+        `language-${language}`,
         plugins,
         lineHighlight && "line-highlight",
-        `language-${language}`,
         className
       )}
       data-line={lineHighlight}

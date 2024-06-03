@@ -21,7 +21,6 @@ const config: Config = {
     './content/**/*.{ts,tsx,js,jsx}',
     './lib/**/*.{ts,tsx,js,jsx}',
     './messages/**/*.{ts,tsx,js,jsx}',
-    './style/**/*.{ts,tsx,js,jsx}',
     './utils/**/*.{ts,tsx,js,jsx}',
   ],
   darkMode: "class",

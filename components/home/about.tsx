@@ -102,7 +102,7 @@ export const About: FC<AboutProps> = (props) => {
           <div className="relative -z-50 h-full w-full -rotate-6 rounded-xl bg-gray-200/80"></div>
         </button>
         <section className="spacing-8">
-          <header className="grid max-w-xl grid-cols-2 gap-4 text-center sm:grid-cols-4 sm:text-left">
+          <header className="grid max-w-xl grid-cols-3 gap-4 text-center sm:grid-cols-3 sm:text-left">
             {ABOUT.stats.map(({ statistic, caption, tooltip }, index) => {
               const dataTip = caption === "year" ? yearTooltip : t(tooltip) 
               return (

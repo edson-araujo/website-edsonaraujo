@@ -1,5 +1,5 @@
-import { CopyButton } from "../components/copy-button";
-import { Code, CodeGroupProps } from "./typography/code";
+import { Code, CodeGroupProps } from "components/typography/code";
+import { CopyButton } from "./copy-button";
 
 export const CodeEditor = ({
   code,

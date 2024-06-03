@@ -1,8 +1,9 @@
 // @ts-ignore
 import me from "../public/images/about/me.jpeg";
-import swimmingPool from "../public/images/about/swiminnig-pool.jpg";
 import bar from "../public/images/about/bar.jpg";
 import wedding from "../public/images/about/casamento.jpg";
+import smile from "../public/images/about/euSorrindo.jpg";
+import festaJunina from "../public/images/about/festaJunina.jpg";
 
 export const ABOUT = {
   stats: [
@@ -46,8 +47,8 @@ export const ABOUT = {
       alt: "images.me",
     },
     {
-      src: swimmingPool,
-      alt: "images.swimmingPool",
+      src: festaJunina,
+      alt: "images.festaJunina",
     },
     {
       src: bar,
@@ -56,6 +57,10 @@ export const ABOUT = {
     {
       src: wedding,
       alt: "images.wedding",
+    },
+    {
+      src: smile,
+      alt: "images.smile",
     }
   ],
 };
