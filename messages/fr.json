@@ -93,10 +93,11 @@
     "description6": "J'ai passé la majeure partie de ma vie profondément intéressé par la technologie et la nourriture, construisant continuellement des choses avec les deux. Adolescent, j'étais un nerd de l'informatique typique, passant la plupart de mon temps à bricoler avec l'ordinateur, à modifier des jeux et à découvrir des choses. Bricoler avec le matériel, assembler des ordinateurs. Développer des sites web avec Wordpress. Et bien sûr, jouer à des jeux.",
     "description7": "La plupart de ces choses sont encore vraies aujourd'hui.",
     "images": {
-      "me": "Photo pour les réseaux sociaux",
-      "swimmingPool": "Journée piscine",
-      "bar": "Profiter d'un bon restaurant",
-      "wedding": "Mariage d'amis"
+      "me": "Foto para redes sociales",
+      "festaJunina": "Disfrutando de una buena Festa Junina",
+      "bar": "Disfrutando de un buen restaurante",
+      "wedding": "Casando a los amigos",
+      "smile": "Foto rara de mí sonriendo"
     },
     "timeline": {
       "2002": {
