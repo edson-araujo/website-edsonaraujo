@@ -8,7 +8,7 @@ import { Header } from "@/components/header/header";
 import { Footer } from "@/components/footer";
 import Head from "next/head";
 import { Favicon } from "@/components/_document/favicon";
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/react"
 import "@/style/globals.css";
 
 export const metadata: Metadata = {
@@ -37,7 +37,7 @@ export default function RootLayout({
       >
         <NextIntlClientProvider locale={locale} messages={messages}>
           <ContextProviders>
-            <SpeedInsights/>
+            <Analytics/>
             <Header />
             <main className="min-h-screen print:!mx-auto print:!w-[1024px]">
               {" "}
