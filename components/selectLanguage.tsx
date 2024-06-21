@@ -49,13 +49,13 @@ const SelectLanguage: FC = () => {
   const renderFlag = (locale: string) => {
     switch (locale) {
       case 'en':
-        return <Flag code="US" className="inline-block" width="20" />;
+        return <Flag code="US" className="inline-block" width="20" alt="flag America"/>;
       case 'fr':
-        return <Flag code="FR" className="inline-block" width="20" />;
+        return <Flag code="FR" className="inline-block" width="20" alt="flag France"/>;
       case 'pt':
-        return <Flag code="BR" className="inline-block" width="20" />;
+        return <Flag code="BR" className="inline-block" width="20" alt="flag Brazil"/>;
       case 'es':
-        return <Flag code="ES" className="inline-block" width="20" />;
+        return <Flag code="ES" className="inline-block" width="20" alt="flag Spain"/>;
       default:
         return null;
     }
@@ -71,6 +71,7 @@ const SelectLanguage: FC = () => {
       <DropdownMenuContent
         sideOffset={5}
         align="center"
+        title="Language English"
         className="mt-2 w-12 border border-gray-800/10 dark:border-gray-800 bg-white/50 backdrop-blur dark:bg-gray-900/40 shadow-lg rounded-md"
       >
         <DropdownMenuItem
@@ -81,18 +82,21 @@ const SelectLanguage: FC = () => {
         </DropdownMenuItem>
         <DropdownMenuItem
           className="flex items-center justify-center p-2 hover:bg-gray-100 dark:hover:bg-gray-900 cursor-pointer"
+           title="Language French"
           onClick={() => changeLocale('fr')}
         >
           {renderFlag('fr')}
         </DropdownMenuItem>
         <DropdownMenuItem
           className="flex items-center justify-center p-2 hover:bg-gray-100 dark:hover:bg-gray-900 cursor-pointer"
+           title="Language Protuguese"
           onClick={() => changeLocale('pt')}
         >
           {renderFlag('pt')}
         </DropdownMenuItem>
         <DropdownMenuItem
           className="flex items-center justify-center p-2 hover:bg-gray-100 dark:hover:bg-gray-900 cursor-pointer"
+           title="Language Spanish"
           onClick={() => changeLocale('es')}
         >
           {renderFlag('es')}
