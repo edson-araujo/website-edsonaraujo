@@ -244,6 +244,11 @@ const config: Config = {
         ".animation-pause": {
           "animation-play-state": "paused",
         },
+        '.scrollbar-none': {
+          '&::-webkit-scrollbar': {
+            'display': 'none'
+          }
+        }
       });
     }),
     plugin(({ matchUtilities, theme }) => {

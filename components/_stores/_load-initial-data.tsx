@@ -18,7 +18,6 @@ export const LoadInitialData: FC<PropsWithChildren<any>> = ({ children }) => {
   const [showTooltip, setShowTooltip] = useState(true);
   const [isGloballyMounted, setIsGloballyMounted] = useIsGloballyMounted();
   const [notifications, setNotifications] = useNotifications();
-  // useInitShopifyData();
   useEffect(() => {
     const hideTooltip = () => {
       setTimeout(
@@ -54,11 +53,10 @@ export const LoadInitialData: FC<PropsWithChildren<any>> = ({ children }) => {
             arrowColor="white"
             delayHide={500}
             clickable={true}
-            // possibleCustomEventsOff="hide-global-tooltip"
-            className="relative !border-none !border-transparent !p-0"
+            className="relative !border-none !border-transparent !p-0 pb-10 z-50"
             getContent={(content) => {
               return (
-                <span className="pointer-events-auto block h-[calc(100%+1px)] w-[calc(100%+1px)] max-w-[calc(100vw-32px)] select-none rounded-sm border-card bg-white py-2 px-5 text-slate-700 opacity-100 shadow-xl">
+                <span className=" pointer-events-auto block h-[calc(100%+1px)] w-[calc(100%+1px)] max-w-[calc(100vw-32px)] select-none rounded-sm border-card bg-white py-2 px-8 text-slate-700 opacity-100 shadow-xl">
                   {content}
                 </span>
               );

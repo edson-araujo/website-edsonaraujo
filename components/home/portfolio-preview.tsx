@@ -10,6 +10,7 @@ import { ScrollGallery } from "@/utils/scroll-gallery";
 import { PORTFOLIO } from "@/content/portfolio-preview";
 import { PROJECTS } from "@/content/projects";
 import { useTranslations } from "next-intl";
+import { Scroll } from "lucide-react";
 
 type PortfolioPreviewProps = {};
 
@@ -98,13 +99,13 @@ export const PortfolioPreview: FC<PortfolioPreviewProps> = ({}) => {
                 <h2 className="text-2xl font-bold tracking-tighter text-gray-800 d:text-white">
                   {t(project.name)}
                 </h2>
-                <div className="-ml-0.5 mt-0.5 flex items-center gap-2 tracking-tight text-gray-600 d:text-gray-200">
+                <div className="-ml-0.5 mt-0.5 flex items-center gap-2 tracking-tight text-gray-600 d:text-gray-200 overflow-x-auto projects ">
                   {project.tech?.map(({ name, Icon }, i) => {
-                    if (i > 3) return null;
+                    if (i > 12) return null;
                     return (
                       <div
                         key={name}
-                        className="flex select-none items-center gap-1 whitespace-nowrap rounded border border-gray-700/10 bg-gray-200/30 px-1.5 py-[2px] text-[13px] font-medium hfa:bg-gray-200/60 d:bg-gray-900/20 d:text-gray-50/80 d:hfa:bg-gray-900/30"
+                        className="min-w-max space-x-4 flex select-none items-center gap-1 whitespace-nowrap rounded border border-gray-700/10 bg-gray-200/30 px-1.5 py-[2px] text-[13px] font-medium hfa:bg-gray-200/60 d:bg-gray-900/20 d:text-gray-50/80 d:hfa:bg-gray-900/30 mb-1"
                       >
                         {name}
                       </div>

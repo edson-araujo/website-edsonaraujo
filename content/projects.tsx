@@ -6,21 +6,33 @@ import BikeCraft from "../public/images/projects/bikecraft.png";
 import RhSystem from "../public/images/projects/RHSystem.png";
 import SitePortfolio from "../public/images/projects/siteportfolio.png";
 import CrudJava from "../public/images/projects/crudJava.png";
+import managementSystem from "../public/images/projects/managementSystem.png";
 
 export const PROJECTS = [
   {
+    name: "Projects.managementSystem.name",
+    type: ["type.aws", "type.Spring", "type.Java", "type.mysql", "type.react", "type.tailwind"],
+    tech: [TECH.aws, TECH.springboot, TECH.java, TECH.sql, TECH.react, TECH.shadcn, TECH.javascript],
+    description:"Projects.managementSystem.description",
+    featuredImage: managementSystem,
+    year: "2024",
+    url: "http://systemmanagementedson.s3-website.us-east-2.amazonaws.com",
+    repository: "https://github.com/edson-araujo/systemManagement-frontend",
+  },
+  {
     name: "Projects.SitePortfolio.name",
-    type: ["type.tailwind", "type.typescript", "type.next"],
-    tech: [TECH.typescript, TECH.nextjs, TECH.tailwindcss],
+    type: ["type.tailwind", "type.typescript", "type.next", "type.react"],
+    tech: [TECH.typescript, TECH.nextjs, TECH.tailwindcss, TECH.react, TECH.i18next],
     description:"Projects.SitePortfolio.description",
     featuredImage: SitePortfolio,
     year: "2024",
+    url: "https://www.edsonaraujo.tech",
     repository: "https://github.com/edson-araujo/website-edsonaraujo",
   },
   {
     name: "Projects.RhSystem.name",
     type: ["type.Java", "type.Spring","type.bootstrap", "type.mysql"],
-    tech: [TECH.java, TECH.springboot, TECH.javascript, TECH.bootstrap],
+    tech: [TECH.java, TECH.springboot, TECH.javascript, TECH.bootstrap, TECH.mysql],
     year: "2022",
     repository: "https://github.com/edson-araujo/sistemaRH",
     description:"Projects.RhSystem.description",

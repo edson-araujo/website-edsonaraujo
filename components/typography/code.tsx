@@ -53,8 +53,8 @@ export const Code: FC<CodeGroupProps> = ({ language, plugins, lineHighlight, cod
   return (
     <pre
       className={clsx(
-        `language-${language}`,
         className,
+        `language-${language}`,
         plugins?.map(plugin => plugin),
         lineHighlight && "line-highlight"
       )}

@@ -105,6 +105,13 @@
   opacity: 1 !important;
 }
 
+.__react_component_tooltip.place-top::before {
+  background-color: white !important;
+}
+
+.__react_component_tooltip.place-top::after {
+  z-index: 40 !important;
+}
 @layer base {
   @font-face {
     font-family: 'Inter';
@@ -148,102 +155,45 @@
 
 }
 
-/* Tooltip styles */
-.react-tooltip {
-  color: #fff;
-  background: #222;
-  border: 1px solid transparent;
-  border-radius: 3px;
-  display: inline-block;
-  font-size: 13px;
-  padding: 8px 21px;
-  position: fixed;
-  pointer-events: none;
-  transition: opacity 0.3s ease-out;
-  z-index: 999;
-  opacity: 0;
-  visibility: hidden;
+/* width */
+::-webkit-scrollbar {
+  width: 10px;   /* Largura da barra de rolagem vertical */
+  height: 10px; 
 }
 
-.react-tooltip.show {
-  opacity: 0.9;
-  visibility: visible;
+.projects::-webkit-scrollbar {
+  height: 5px; 
 }
 
-.react-tooltip.allow_hover,
-.react-tooltip.allow_click {
-  pointer-events: auto;
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 2px;
 }
 
-.react-tooltip.place-top {
-  margin-top: -10px;
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  height: 1.5;
+  border-radius: 5px;
 }
 
-.react-tooltip.place-top::before,
-.react-tooltip.place-top::after,
-.react-tooltip.place-bottom::before,
-.react-tooltip.place-bottom::after,
-.react-tooltip.place-left::before,
-.react-tooltip.place-left::after,
-.react-tooltip.place-right::before,
-.react-tooltip.place-right::after {
-  content: "";
-  position: absolute;
-  border-style: solid;
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #cbd5e1;
 }
 
-.react-tooltip.place-top::after {
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  bottom: -6px;
-  left: 50%;
-  margin-left: -8px;
-  border-top-color: white;
-  border-top-style: solid;
-  border-top-width: 6px;
+/* Track */
+.dark ::-webkit-scrollbar-track {
+  background: #1a202c; /* Cor de fundo para o modo escuro */
 }
 
-.react-tooltip.place-bottom {
-  margin-top: 10px;
+/* Handle */
+.dark ::-webkit-scrollbar-thumb {
+  background: #4a5568; /* Cor do controle deslizante para o modo escuro */
 }
 
-.react-tooltip.place-bottom::after {
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  top: -6px;
-  left: 50%;
-  margin-left: -8px;
-  border-bottom-color: white;
-  border-bottom-style: solid;
-  border-bottom-width: 6px;
-}
-
-.react-tooltip.place-left {
-  margin-left: -10px;
-}
-
-.react-tooltip.place-left::after {
-  border-top: 5px solid transparent;
-  border-bottom: 5px solid transparent;
-  right: -6px;
-  top: 50%;
-  margin-top: -4px;
-  border-left-color: white;
-  border-left-style: solid;
-  border-left-width: 6px;
-}
-
-.react-tooltip.place-right {
-  margin-left: 10px;
-}
-
-.react-tooltip.place-right::after {
-  border-top: 5px solid transparent;
-  border-bottom: 5px solid transparent;
-  left: -6px;
-  top: 50%;
-  margin-top: -4px;
-  border-right-color: white;
-  border-right-style: solid;
-  border-right-width: 6px;
+/* Handle on hover */
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #4a5568; /* Cor do controle deslizante ao passar o mouse para o modo escuro */
 }

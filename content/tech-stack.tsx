@@ -26,18 +26,18 @@ import Vend from "public/icons/tech-logos/vend_pos.svg";
 import NextJs from "public/icons/tech-logos/nextjs.svg";
 import Express from "public/icons/tech-logos/express.svg";
 import Liquid from "public/icons/tech-logos/liquid.svg";
-import { SiBootstrap } from "react-icons/si";
+import { SiBootstrap, SiI18Next, SiShadcnui } from "react-icons/si";
 
 type IconProps = React.HTMLAttributes<SVGElement>;
 
 export const TECH = {
-  shopify: {
-    name: "Shopify",
-    Icon: ({ className }: IconProps) => <Vend className={className} />,
+  shadcn: {
+    name: "Shadcn/Ui",
+    Icon: ({ className }: IconProps) => <SiShadcnui className={className} />,
   },
-  shopify_polaris: {
-    name: "Shopify Polaris",
-    Icon: ({ className }: IconProps) => <Vend className={className} />,
+  i18next: {
+    name: "i18next",
+    Icon: ({ className }: IconProps) => <SiI18Next className={className} />,
   },
   vend: {
     name: "Vend POS",

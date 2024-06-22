@@ -74,7 +74,7 @@ export const About: FC<AboutProps> = (props) => {
                 sizes="(min-width: 580px) 540px, 400px"
                 preload
                 priority={index === 0}
-                className="absolute left-0 top-0 rounded-xl border-2 border-gray-50/80 object-cover !opacity-0 shadow-lg shadow-gray-700/5 transition-all duration-300 group-focus-visible:border-sky-500 d:border-gray-600/80"
+                className="absolute left-0 top-0 rounded-xl border-2 border-gray-50/80 object-cover !opacity-0 shadow-lg shadow-gray-700/5 transition-all duration-300 group-focus-visible:border-sky-500 d:border-gray-600/80 mt-8"
                 data-about-image-index={index}
                 onLoad={() =>
                   document

@@ -268,7 +268,7 @@
     "heading": "My projects.",
     "type": {
       "allProjects": "All Projects",
-      "typescript": "Typescript",
+      "typescript": "TypeScript",
       "javascript": "JavaScript",
       "css": "CSS",
       "integrations": "Integrations",
@@ -278,7 +278,9 @@
       "tailwind": "Tailwind",
       "next": "Next",
       "bootstrap": "Bootstrap",
-      "mysql": "MySql"
+      "mysql": "MySql",
+      "aws": "AWS",
+      "react": "React"
     },
     "Projects": {
       "HelpDesk": {
@@ -304,6 +306,10 @@
       "CrudJava": {
         "name": "CRUD in Java",
         "description": "Test project developed with Java, Struts, JavaScript, and SQL and their relationships."
+      },
+      "managementSystem": {
+        "name": "Management System",
+        "description": "Project management system, fully hosted on AWS and developed with Spring, SQL, Tailwind, shadcn/ui, and React."
       }
     },
 

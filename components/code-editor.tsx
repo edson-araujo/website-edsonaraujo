@@ -41,9 +41,9 @@ export const CodeEditor = ({
           />
         </div>
       </header>
-      <main className=" relative h-[calc(100%-37px)] overflow-hidden  before:absolute b:pointer-events-none b:bottom-0 b:z-10 b:h-12 b:w-full b:select-none b:bg-gradient-to-b b:from-transparent b:to-gray-900">
-        <div className="sm:scrollbar-none relative h-full overflow-auto ">
-          <Code className="text-[13px]" code={code} language={language} />
+      <main className="relative h-[calc(100%-37px)] overflow-hidden before:absolute b:pointer-events-none b:bottom-0 b:z-10 b:h-12 b:w-full b:select-none b:bg-gradient-to-b b:from-transparent b:to-gray-900">
+        <div className="sm:scrollbar-none relative h-full overflow-auto">
+          <Code  code={code} language={language} className="text-[13px]"/>
         </div>
       </main>
     </figure>

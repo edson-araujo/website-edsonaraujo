@@ -272,7 +272,9 @@
       "tailwind": "Tailwind",
       "next": "Next",
       "bootstrap": "Bootstrap",
-      "mysql": "MySql"
+      "mysql": "MySql",
+      "aws": "AWS",
+      "react": "React"
     },
 
     "Projects": {
@@ -299,6 +301,10 @@
       "CrudJava": {
         "name": "CRUD em Java",
         "description": "Projeto de teste desenvolvido com Java, Struts. JavaScript e SQL e seus relacionamentos."
+      },
+      "managementSystem": {
+        "name": "Sistema de gerenciamento",
+        "description": "Sistema de gerenciamento de projetos, hospedado completamente na AWS e desenvolvido com Spring, SQL, Taiwlind, shadcn/ui e React."
       }
     },
 
