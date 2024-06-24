@@ -34,10 +34,6 @@ export const useHeroContent = () => {
       {
         name: t('tech.React'),
         Icon: ({ className }: IconProps) => <SiReact className={className} />,
-      },
-      {
-        name: t('tech.Next'),
-        Icon: ({ className }: IconProps) => <RiNextjsFill className={className} />,
       }
     ],
     body: '',

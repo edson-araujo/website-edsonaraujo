@@ -16,7 +16,7 @@ import { CodeEditor } from "../code-editor";
 import ToggleSwitch from "../toggle-switch";
 import { InstagramProfile } from "../instagram-profile";
 import { useHeroContent } from "../home/heroContent";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import party from "party-js";
 import { SiLinkedin, SiWhatsapp } from "react-icons/si";
 import { IoLogoLinkedin } from "react-icons/io5";
@@ -37,6 +37,7 @@ export const Hero: FC<{ instagramData: any }> = ({ instagramData }) => {
   const { theme, setTheme } = useTheme();
   const HERO = useHeroContent();
   const t = useTranslations("Hero");
+  const locale = useLocale();
 
   useEffect(() => {
     // Isso garante que a manipulação do DOM só ocorra no cliente
@@ -111,7 +112,7 @@ export const Hero: FC<{ instagramData: any }> = ({ instagramData }) => {
 
             {HERO.cta2 ? (
               <Link
-                href={HERO.cta2.href}
+                href={`/${locale}${HERO.cta2.href}`}
                 className="button-border inline-flex whitespace-nowrap bg-white/90 px-10 py-2.5 text-sm font-medium tracking-tight text-gray-500 transition-all hfa:border-gray-900/70 hfa:bg-white/90 hfa:text-gray-900 d:border-gray-700/80 d:bg-transparent d:text-gray-300 d:hfa:border-gray-200/30 d:hfa:bg-gray-900/80 d:hfa:text-gray-50 md:px-12"
               >
                 {HERO.cta2.name}

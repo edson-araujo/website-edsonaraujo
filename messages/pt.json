@@ -52,7 +52,7 @@
       "name": "Entre em contato"
     },
     "cta2": {
-      "href": "/curriculo",
+      "href": "/resume",
       "name": "Currículo"
     },
     "great": "ÓTIMO!",
@@ -320,7 +320,6 @@
       "adm": "administração",
       "introduction": "Introdução",
       "experience": "Experiência",
-      "projects": "Projetos",
       "education": "Educação",
       "skills": "Habilidades",
       "certifications": "Certificações",

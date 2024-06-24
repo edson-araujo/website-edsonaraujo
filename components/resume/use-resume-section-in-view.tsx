@@ -25,7 +25,6 @@ export const useResumeSectionInView = create<ResumeSectionInViewStore>((set) => 
   sections: {
     introduction: { showing: true, centerVisible: false, fullyVisible: false },
     experience: { showing: true, centerVisible: false, fullyVisible: false },
-    projects: { showing: true, centerVisible: false, fullyVisible: false },
     education: { showing: true, centerVisible: false, fullyVisible: false },
     skills: { showing: true, centerVisible: false, fullyVisible: false },
     certifications: { showing: true, centerVisible: false, fullyVisible: false },

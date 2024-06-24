@@ -105,7 +105,7 @@ export const ResumeFooter = () => {
             </Link>
           </nav>
           <h5 className="ml-1 text-[13px] text-gray-500 d:text-gray-400">
-            Santos, São Paulo - Brasil
+            São Paulo - Brasil
           </h5>
         </section>
       </section>

@@ -157,7 +157,7 @@ export const siteConfig = {
   creator: "Edson Araújo",
   title: "Desenvolvedor & Criador de conteúdo",
   bio: "bio",
-  location: "Santos, SP - Brasil",
+  location: "São Paulo - Brasil",
   locationLink: "https://maps.app.goo.gl/pCMcxCaxhi8XjGaH7",
   email: "batuhanbilginn@gmail.com",
   items: GridItems,

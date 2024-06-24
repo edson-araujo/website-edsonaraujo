@@ -168,8 +168,6 @@ export const CV = {
       TECH.nextjs,
       TECH.jest,
       TECH.nodejs,
-      TECH.framer,
-      TECH.redis,
     ],
     serviceProviders: [
       TECH.vercel,

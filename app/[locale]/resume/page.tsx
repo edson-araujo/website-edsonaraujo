@@ -75,7 +75,7 @@ const Resume: FC = (props) => {
                 ))}
               </h2>
             </header>
-            <div className="mt-1 ml-auto mt-auto flex-1 items-end justify-end text-right text-[15px] text-gray-500 spacing-0">
+            <div className="ml-auto mt-auto flex-1 items-end justify-end text-right text-[15px] text-gray-500 spacing-0">
               <div>
                 <Link href={`tel:${CV.mobile.href}`}>{CV.mobile.number}</Link>
                 <span> - </span>
@@ -86,24 +86,14 @@ const Resume: FC = (props) => {
                   {CV.website.replace("https://", "")}
                 </Link>
                 <span> - </span>
-                <Link href="https://github.com/FelixTellmann">
-                  github.com/FelixTellmann
+                <Link href="https://github.com/edson-araujo">
+                  github.com/edson-araujo
                 </Link>
               </div>
             </div>
           </th>
         </tr>
       </thead>
-      <tfoot className="fixed inset-x-0 bottom-0 hidden w-full text-center print:!table-footer-group">
-        <tr>
-          <th>
-            <small className="absolute left-1/2 bottom-0 -translate-x-1/2 pb-1 pt-3 text-[13px] font-medium tracking-tight text-gray-400">
-              View full resume at{" "}
-              <Link href="https://flext.dev">www.flext.dev</Link>
-            </small>
-          </th>
-        </tr>
-      </tfoot>
       <tbody className="block print:table-row-group print:!h-screen print:!min-h-screen">
         <tr className="block print:!table-row">
           <td className="block print:!table-cell">
@@ -113,7 +103,7 @@ const Resume: FC = (props) => {
                   title="introduction"
                   className="break-inside-avoid print:!max-w-3xl"
                 >
-                  <p className="text-[15px] leading-relaxed text-gray-500 d:text-gray-300 d:text-gray-300 print:!-ml-24 print:!max-w-3xl print:!text-base">
+                  <p className="text-[15px] leading-relaxed text-gray-500 d:text-gray-300 print:!-ml-24 print:!max-w-3xl print:!text-base">
                     {t(CV.intro)}
                   </p>
                 </ResumeSection>
@@ -139,7 +129,7 @@ const Resume: FC = (props) => {
                       src={ProfilePic}
                       preload
                       className="rounded-sm shadow-xl shadow-sky-400/10"
-                      alt="Felix Tellmann Profile Pic"
+                      alt="Edson Araújo Profile Pic"
                       width="176"
                       height="224"
                       pixelDensity={2}
@@ -434,14 +424,14 @@ const Resume: FC = (props) => {
                   </div>
                 </ResumeSection>
                 <ResumeSection title="interests" className="break-inside-avoid">
-                  <p className="text-[15px] leading-relaxed text-gray-500 d:text-gray-300 d:text-gray-300 print:!-ml-24 print:!text-base">
+                  <p className="text-[15px] leading-relaxed text-gray-500 d:text-gray-300 print:!-ml-24 print:!text-base">
                     {t(CV.personal)}
                   </p>
                   <div className="h-24"></div>
                 </ResumeSection>
               </main>
               <aside className="top-[144px] mb-auto hidden max-h-min print:!hidden lg:sticky lg:spacing-8">
-                <figure className="relative -top-2 z-0 ml-2 h-48 w-[9.5rem] rotate-6 print:!absolute print:!left-40 print:!top-6">
+                <figure className="relative -top-2 z-0 ml-2 h-48 w-[9.5rem] print:!absolute print:!left-40 print:!top-6">
                   <div className="absolute -inset-x-10 top-0 h-0.5 bg-gray-900/[0.1] [mask-image:linear-gradient(to_right,transparent,white_4rem,white_calc(100%-4rem),transparent)] d:bg-gray-50/20" />
                   <div className="absolute -inset-y-10 right-0 w-0.5 bg-gray-900/[0.1] [mask-image:linear-gradient(to_top,transparent,white_4rem,white_calc(100%-4rem),transparent)] d:bg-gray-50/20" />
                   <div className="absolute -inset-x-10 bottom-0 h-0.5 bg-gray-900/[0.1] [mask-image:linear-gradient(to_right,transparent,white_4rem,white_calc(100%-4rem),transparent)] d:bg-gray-50/20" />
@@ -463,7 +453,7 @@ const Resume: FC = (props) => {
                       src={ProfilePic}
                       preload
                       className="rounded-sm shadow-xl shadow-sky-400/10"
-                      alt="Felix Tellmann Profile Pic"
+                      alt="Edson Araújo Profile Pic"
                       width="176"
                       height="224"
                       pixelDensity={2}
@@ -563,7 +553,7 @@ const Resume: FC = (props) => {
                     </Link>
                   </nav>
                   <h5 className="ml-1 text-[13px] text-gray-500 d:text-gray-400">
-                    Santos, São Paulo - Brasil
+                    São Paulo - Brasil
                   </h5>
                 </section>
               </aside>

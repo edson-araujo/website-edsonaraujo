@@ -1,5 +1,3 @@
-import FlextLogo from "public/logo.svg";
-
 export const HEADER = {
   nav: [
     {
