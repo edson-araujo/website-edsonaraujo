@@ -1,5 +1,6 @@
 # My Portfolio
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+
 **Website:** [ www.edsonaraujo.tech](https://www.edsonaraujo.tech)
 
 ## Introduction
@@ -22,8 +23,6 @@ Welcome to my portfolio! This site was created to showcase my projects, skills, 
 - **Intuitive Navigation**: Clear and organized structure to facilitate navigation between sections of the site.
 
 ## Project Structure
-
-![Portfolio Screenshot](./public/images/projects/screen.png)
 
 ```plaintext
 /
