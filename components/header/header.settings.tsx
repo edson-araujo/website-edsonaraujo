@@ -8,6 +8,7 @@ import { useTranslations } from "next-intl";
 import { TbFileDownload } from 'react-icons/tb';
 import { Link } from '../link';
 import { HiOutlineDocumentDownload } from "react-icons/hi";
+import { useRouter } from 'next/router';
 
 type ProfileNavProps = {
   showNav: boolean;
