@@ -16,7 +16,7 @@ type ProfileNavProps = {
 export const ProfileNav: FC<ProfileNavProps> = ({ showNav }) => {
   const { theme, setTheme } = useTheme();
   const t = useTranslations('Header');
-  const locale = t.locale; 
+  const { locale } = useRouter();
   const resumePath = locale === 'pt' ? '/docs/pt/Curriculo-Edson-Araujo.pdf' : '/docs/en/English-Curriculo-EdsonAraujo.pdf';
   return (
     <nav className="z-10 ml-auto flex gap-1 pl-4">
