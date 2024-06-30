@@ -4,11 +4,10 @@ import { FC } from 'react';
 import { SiGithub } from 'react-icons/si';
 import DarkmodeIcon from '../darkmode-icon';
 import SelectLanguage from '../selectLanguage';
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { TbFileDownload } from 'react-icons/tb';
 import { Link } from '../link';
 import { HiOutlineDocumentDownload } from "react-icons/hi";
-import { useRouter } from 'next/router';
 
 type ProfileNavProps = {
   showNav: boolean;
@@ -17,7 +16,7 @@ type ProfileNavProps = {
 export const ProfileNav: FC<ProfileNavProps> = ({ showNav }) => {
   const { theme, setTheme } = useTheme();
   const t = useTranslations('Header');
-  const { locale } = useRouter();
+  const locale = useLocale();
   const resumePath = locale === 'pt' ? '/docs/pt/Curriculo-Edson-Araujo.pdf' : '/docs/en/English-Curriculo-EdsonAraujo.pdf';
   return (
     <nav className="z-10 ml-auto flex gap-1 pl-4">
