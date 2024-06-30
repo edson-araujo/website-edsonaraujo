@@ -44,4 +44,11 @@ Welcome to my portfolio! This site was created to showcase my projects, skills, 
 │   ├── images/
 ├── style/
 ├── utils/
+```
 
+## Contact
+Email: edsonaraujo.dev@gmail.com
+
+LinkedIn: [LinkedIn profile](https://www.linkedin.com/in/edson-alves-araujo/)
+
+GitHub: [GitHub profile](https://github.com/edson-araujo)
