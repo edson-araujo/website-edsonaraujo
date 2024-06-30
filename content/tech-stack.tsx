@@ -328,7 +328,7 @@ export const TECH = {
   },
   soapui: {
     name: "SoapUi",
-    Icon: ({ className }: IconProps) => <S className={className} />,
+    Icon: ({ className }: IconProps) => <NextJs className={className} />,
   },
   msTeams: {
     name: "Microsoft Teams",
