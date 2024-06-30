@@ -8,11 +8,11 @@ export default function MyDocument() {
       <Head>
         <meta
           name="title"
-          content="Eu sou o Edson Araújo, desenvolvedor FullStack, tecnologia sprincipais Java, Spring, React"
+          content="Eu sou o Edson Araújo, desenvolvedor Full Stack, tecnologia sprincipais Java, Spring, React"
         />
         <meta
           name="description"
-          content="Eu sou o Edson Araújo, desenvolvedor FullStack, tecnologia sprincipais Java, Spring, React"
+          content="Eu sou o Edson Araújo, desenvolvedor Full Stack, tecnologia sprincipais Java, Spring, React"
         />
         <Font />
         <Favicon />

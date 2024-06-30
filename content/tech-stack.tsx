@@ -39,9 +39,8 @@ export const TECH = {
     name: "i18next",
     Icon: ({ className }: IconProps) => <SiI18Next className={className} />,
   },
-  vend: {
-    name: "Vend POS",
-    Icon: ({ className }: IconProps) => <Vend className={className} />,
+  mockito: {
+    name: "Mockito"
   },
   typescript: {
     name: "TypeScript",
@@ -327,9 +326,9 @@ export const TECH = {
     name: "Asana",
     Icon: ({ className }: IconProps) => <NextJs className={className} />,
   },
-  clockify: {
-    name: "Clockify",
-    Icon: ({ className }: IconProps) => <NextJs className={className} />,
+  soapui: {
+    name: "SoapUi",
+    Icon: ({ className }: IconProps) => <S className={className} />,
   },
   msTeams: {
     name: "Microsoft Teams",

@@ -13,8 +13,8 @@ import "@/style/globals.css";
 import "@/style/prism.scss";
 
 export const metadata: Metadata = {
-  title: "Edson Araújo - Fullstack Developer - Java, Spring, React",
-  description: "Eu sou o Edson Araújo, desenvolvedor FullStack, tecnologia sprincipais Java, Spring, React",
+  title: "Edson Araújo - Full stack Developer - Java, Spring, React",
+  description: "Eu sou o Edson Araújo, desenvolvedor Full Stack, tecnologia sprincipais Java, Spring, React",
 };
 export default function RootLayout({
   children,

@@ -18,7 +18,8 @@
     "AltAbout": "Más sobre mí",
     "AltPortfolio": "Trabajos que he realizado",
     "AltResume": "Mi currículum profesional",
-    "AltLinks": "Más información sobre mí"
+    "AltLinks": "Más información sobre mí",
+    "Curriculo": "Descargar currículum"
   },
   "Footer": {
     "baseboard": "Edson Araújo, Todos los derechos reservados."
@@ -46,8 +47,8 @@
       "Next": "Next"
     },
     "FollowLinkedin": "Sígueme en LinkedIn",
-    "body1": "Me encanta escribir código que lleva las cosas al siguiente nivel, creando aplicaciones altamente eficientes, integraciones de API automatizadas y creando experiencias de usuario impresionantes que te hacen sentir ",
-    "body2": "Siempre estoy ansioso por aprender y explorar nuevas tecnologías, frameworks y lenguajes de programación. Actualmente, estoy aprendiendo sobre ",
+    "body1": "Soy desarrollador Full Stack con experiencia en diversas tecnologías, incluyendo Java, Spring, React, TypeScript, JavaScript, SQL, AWS y pruebas unitarias con JUnit, Mockito y Jest. Me encanta escribir código que proporcione experiencias de usuario increíbles y haga que las personas se sientan ",
+    "body2": "Siempre estoy ansioso por aprender y explorar nuevas tecnologías, bibliotecas, frameworks, lenguajes de programación y nuevos enfoques de desarrollo. Actualmente, estoy aprendiendo sobre ",
     "and": "y",
     "cta1": {
       "href": "mailto:edsonaraujo.dev@gmail.com",
@@ -333,12 +334,12 @@
     },
     "cv": {
       "name": "Edson Araújo",
-      "title": "Desarrollador Fullstack",
+      "title": "Desarrollador Full stack",
       "address": "Santos, São Paulo - Brasil",
       "email": "edsonaraujo.dev@gmail.com",
       "website": "",
       "mobile": "+55 13 98847-3945",
-      "intro": "Soy un entusiasta de la tecnología, me encanta seguir el desarrollo de nuevas tecnologías y estar siempre actualizado. Me gustan mucho las películas y series sobre este tema. Además, me gusta transmitir mis conocimientos, buscando nuevas formas de colaborar con personas y equipos que enseñan tecnología. Suelo publicar contenido en mis redes sociales para democratizar el conocimiento de la programación. Puedes seguirme y ver que me encanta salir con mis amigos y familia, y muchas veces la tecnología será uno de los temas que abordaré. También es importante para mí seguir el desarrollo de la tecnología web y el diseño UX, escuchando podcasts, participando en eventos locales, conferencias, utilizando Twitter e Instagram.",
+      "intro": "Soy desarrollador Full Stack con experiencia en diversas tecnologías, incluyendo Java, Spring, React, TypeScript, JavaScript, SQL, AWS y pruebas unitarias con JUnit, Mockito y Jest. A menudo publico contenido en mis redes sociales para democratizar el conocimiento de la programación. También es importante para mí seguir el desarrollo de la tecnología web y el diseño de UX, escuchando podcasts, participando en eventos locales, conferencias y utilizando Twitter e Instagram.",
       "education_1": {
         "city": "Guarujá",
         "country": "Brasil",
@@ -384,11 +385,11 @@
         "city": "Santos",
         "country": "Brasil",
         "company": "AGE Technology",
-        "title": "Desarrollador Fullstack",
+        "title": "Desarrollador Full stack",
         "responsibility_1": "Amplié mi papel con la implementación de React en el sistema, lo que me dio la oportunidad de trabajar con este marco.",
         "responsibility_2": "Me convertí en el representante de Front-end de mi equipo, compartiendo mi conocimiento y las innovaciones de mis superiores en esta área con el equipo.",
-        "responsibility_3": "Después de unos meses, tuve la oportunidad de trabajar como Junior en el mismo puesto de Desarrollador Fullstack, ampliando mi papel con AWS, servicios web e integración de API.",
-        "responsibility_4": "Comencé como Trainee en el puesto de Desarrollador Fullstack, trabajando en el desarrollo de nuevas funcionalidades y brindando soporte en el sistema de la empresa. Las tecnologías con las que trabajo son Git, Java, JavaScript, Sass, jQuery, Struts, SQL y Materialize. También utilizamos Scrum para la gestión de equipos."
+        "responsibility_3": "Después de unos meses, tuve la oportunidad de trabajar como Junior en el mismo puesto de Desarrollador Full stack, ampliando mi papel con AWS, servicios web e integración de API.",
+        "responsibility_4": "Comencé como Trainee en el puesto de Desarrollador Full stack, trabajando en el desarrollo de nuevas funcionalidades y brindando soporte en el sistema de la empresa. Las tecnologías con las que trabajo son Git, Java, JavaScript, Sass, jQuery, Struts, SQL y Materialize. También utilizamos Scrum para la gestión de equipos."
       },
       "capabilities_languages_1": "Portugués - nativo",
       "capabilities_languages_2": "Inglés - Intermedio",

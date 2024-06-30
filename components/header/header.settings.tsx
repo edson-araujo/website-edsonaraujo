@@ -2,10 +2,12 @@ import clsx from 'clsx';
 import { useTheme } from 'next-themes';
 import { FC } from 'react';
 import { SiGithub } from 'react-icons/si';
-import { Link } from '../link';
 import DarkmodeIcon from '../darkmode-icon';
 import SelectLanguage from '../selectLanguage';
 import { useTranslations } from "next-intl";
+import { TbFileDownload } from 'react-icons/tb';
+import { Link } from '../link';
+import { HiOutlineDocumentDownload } from "react-icons/hi";
 
 type ProfileNavProps = {
   showNav: boolean;
@@ -14,7 +16,8 @@ type ProfileNavProps = {
 export const ProfileNav: FC<ProfileNavProps> = ({ showNav }) => {
   const { theme, setTheme } = useTheme();
   const t = useTranslations('Header');
-
+  const locale = t.locale; 
+  const resumePath = locale === 'pt' ? '/docs/pt/Curriculo-Edson-Araujo.pdf' : '/docs/en/English-Curriculo-EdsonAraujo.pdf';
   return (
     <nav className="z-10 ml-auto flex gap-1 pl-4">
       <SelectLanguage />
@@ -30,14 +33,18 @@ export const ProfileNav: FC<ProfileNavProps> = ({ showNav }) => {
         <DarkmodeIcon />
       </button>
       <Link
-        href="https://github.com/edson-araujo"
+        href={resumePath}
+        target="_blank"
+        download="Curriculo-Edson-Araujo.pdf" 
+        aria-label="Downlod Resume"
+        data-tip={t('Curriculo')}
         className={clsx(
           "rounded p-2 text-gray-500 transition-colors d:text-gray-300 d:h:text-gray-50 md:h:text-gray-900",
           showNav ? "h:text-gray-200" : "h:text-gray-900"
         )}
       >
-        <span className="sr-only">Github</span>
-        <SiGithub className="h-5 w-5" />
+        <span className="sr-only">Curriculo</span>
+        <HiOutlineDocumentDownload  className="h-5 w-5" />
       </Link>
       <Link
         target="_blank"

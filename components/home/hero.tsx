@@ -18,7 +18,7 @@ import { InstagramProfile } from "../instagram-profile";
 import { useHeroContent } from "../home/heroContent";
 import { useLocale, useTranslations } from "next-intl";
 import party from "party-js";
-import { SiLinkedin, SiWhatsapp } from "react-icons/si";
+import { SiGithub, SiLinkedin, SiWhatsapp } from "react-icons/si";
 import { IoLogoLinkedin } from "react-icons/io5";
 import { FaLinkedinIn } from "react-icons/fa";
 
@@ -150,12 +150,12 @@ export const Hero: FC<{ instagramData: any }> = ({ instagramData }) => {
               <Link
                 target="_blank"
                 href="https://wa.me/5513988473945?text=Edson%21"
-                className="group flex h-9 w-9 items-center justify-center rounded-full border-2 border-gray-400/50 bg-gray-100 bg-clip-padding text-sm font-medium text-gray-600 transition-all hfa:border-green-600/30 hfa:bg-green-50 hfa:text-green-50 d:bg-gray-700 d:text-gray-50 d:hfa:bg-green-50"
-                data-tip="Whatsapp"
+                className="group flex h-9 w-9 items-center justify-center rounded-full border-2 border-gray-400/50 bg-gray-100 bg-clip-padding text-sm font-medium text-gray-600 transition-all hfa:border-slate-600/30 hfa:bg-slate-600 hfa:text-white d:bg-gray-700 d:text-gray-50 d:hfa:bg-slate-600"
+                data-tip="GitHub"
               >
-                <span className="sr-only">Whatsapp</span>
-                <span className="p-1 rounded-full bg-green-50">
-                  <SiWhatsapp color="white" fontSize="0.7em"/>
+                <span className="sr-only">GitHub</span>
+                <span className="p-1 rounded-full">
+                <SiGithub className="h-5 w-5" />
                 </span>
               </Link>
               <ToggleSwitch

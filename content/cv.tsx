@@ -168,6 +168,7 @@ export const CV = {
       TECH.nextjs,
       TECH.jest,
       TECH.nodejs,
+      TECH.mockito
     ],
     serviceProviders: [
       TECH.vercel,
@@ -227,7 +228,7 @@ export const CV = {
     },
     {
       date: "2024",
-      name: "Digital Innovation One Inc - Formação TypeScript Fullstack Developer",
+      name: "Digital Innovation One Inc - Formação TypeScript Full stack Developer",
       type: ["sections.techDev", "sections.relevant", "sections.all"],
     },
     {
