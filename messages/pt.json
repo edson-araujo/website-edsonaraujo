@@ -415,6 +415,7 @@
   "Links": {
     "bio": "Desenvolvo aplicações interativas e de altas perfomances.",
     "contateMe": "Contate-me ",
+    "tituloSpotfy": "",
     "GridItems": {
       "gridItem_1": {
         "description": "Meu Linkedin para mais informações a respeito da minha carreira e vida profissional.",
@@ -451,7 +452,8 @@
         "buttonTitle": "Matricular"
       },
       "gridItem_9": {
-        "title": "Come Around Me"
+        "title": "Julho",
+        "description": ""
       }
     }
   }

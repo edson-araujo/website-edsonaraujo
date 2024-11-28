@@ -29,6 +29,7 @@ const nextConfig = {
       "images-na.ssl-images-amazon.com",
       "m.media-amazon.com",
       "creatorspace.imgix.net",
+      "upload.wikimedia.org",
       "hotmart.s3.amazonaws.com",
     ],
   },

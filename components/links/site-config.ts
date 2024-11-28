@@ -77,14 +77,15 @@ const GridItems: GridItemInterface[] = [
   {
     layout: "2x4",
     type: "equipment",
+    description: "GridItems.gridItem_9.description",
     title: "GridItems.gridItem_9.title",
     icon: "spotify",
     link: "open.spotify.com",
     image:
-      "https://creatorspace.imgix.net/sites/ogimages/aHR0cHM6Ly9pLnNjZG4uY28vaW1hZ2UvYWI2NzYxNmQwMDAwYjI3MzdmZTRhODJhMDhjNGYwZGVjYmVkZGJjNg==.jpeg?width=600&height=600",
-    buttonTitle: "Follow",
+      "https://upload.wikimedia.org/wikipedia/pt/7/78/J%C3%A3o_-_Supernova.png",
+    buttonTitle: "tituloSpotfy",
     buttonSecondaryText: "3",
-    buttonLink: "https://open.spotify.com/intl-pt/track/2o9LAypwGH4ctV0i9boo6d?si=db16941d9152485c",
+    buttonLink: "https://open.spotify.com/intl-pt/track/7bkmDZgSLDLhmYjIb8hu0I?si=900d77947f9b4968",
     background: "d:bg-green-500/10 bg-green-500/10",
     hoverBackground: "hover:bg-green-500/20 hover:d:bg-green-500/20",
     color: "#1ED760",

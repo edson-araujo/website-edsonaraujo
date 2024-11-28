@@ -422,6 +422,7 @@
   "Links": {
     "bio": "Je développe des applications interactives et haute performance.",
     "contateMe": "Contactez-moi",
+    "tituloSpotfy": "",
     "GridItems": {
       "gridItem_1": {
         "description": "Mon LinkedIn pour plus d'informations sur ma carrière et ma vie professionnelle.",
@@ -458,7 +459,8 @@
         "buttonTitle": "S'inscrire"
       },
       "gridItem_9": {
-        "title": "Come Around Me"
+        "title": "Julho",
+        "description": ""
       }
     }
   }

@@ -42,9 +42,6 @@ const RightPanel = () => {
       {siteConfig.items.map((item, index) => {
         const background = item.background ?? "";
         const hoverBackground = item.hoverBackground ?? "";
-        const translatedDescription = t(item.description);
-        const translatedButtonTitle = t(item.buttonTitle);
-        const translatedTitle = t(item.title);
         return (
           <GridItem
             key={item.title + item.type + index}
@@ -52,13 +49,13 @@ const RightPanel = () => {
             item={{ ...item, background, hoverBackground}}
           >
             {item.type === "social" ? (
-              <Social item={{ ...item, description: translatedDescription, buttonTitle:  translatedButtonTitle, title: translatedTitle, }} />
+              <Social item={{ ...item, description: t(item.description), buttonTitle:  t(item.buttonTitle), title: t(item.title), }} />
             ) : item.type === "mentor" ? (
-              <Mentor item={{ ...item, title: translatedTitle }} />
+              <Mentor item={{ ...item, title: t(item.title) }} />
             ) : item.type === "project" ? (
-              <Project item={{ ...item, title: translatedTitle }} />
+              <Project item={{ ...item, title: t(item.title) }} />
             ) : item.type === "equipment" ? (
-              <Equipments item={{ ...item, description: translatedDescription, title: translatedTitle, buttonTitle:  translatedButtonTitle }} />
+              <Equipments item={{ ...item, description: t(item.description), title: t(item.title), buttonTitle:  t(item.buttonTitle) }} />
             ) : (
               <div>Need to create new component type.</div>
             )}

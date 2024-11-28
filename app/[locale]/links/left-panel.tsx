@@ -22,7 +22,7 @@ const LeftPanel = () => {
             src="https://avatars.githubusercontent.com/u/79815326?v=4"
             width={120}
             height={120}
-            blurDataURL="/pp-new3.png"
+            blurDataURL="https://avatars.githubusercontent.com/u/79815326?v=4"
             style={{ borderRadius: "100px" }}
           />
         </div>
