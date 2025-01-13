@@ -149,7 +149,7 @@ export const Hero: FC<{ instagramData: any }> = ({ instagramData }) => {
               </Link>
               <Link
                 target="_blank"
-                href="https://wa.me/5513988473945?text=Edson%21"
+                href="https://github.com/edson-araujo"
                 className="group flex h-9 w-9 items-center justify-center rounded-full border-2 border-gray-400/50 bg-gray-100 bg-clip-padding text-sm font-medium text-gray-600 transition-all hfa:border-slate-600/30 hfa:bg-slate-600 hfa:text-white d:bg-gray-700 d:text-gray-50 d:hfa:bg-slate-600"
                 data-tip="GitHub"
               >

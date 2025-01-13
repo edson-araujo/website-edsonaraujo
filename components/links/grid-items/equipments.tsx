@@ -49,7 +49,6 @@ const Equipments = ({ item }: { item: GridItemInterface }) => {
           {/* Image */}
           <div className="w-full">
             <Image
-              priority
               className="object-cover object-center w-full h-auto max-h-32 md:max-h-64 rounded-3xl opacity-70"
               src={item.image ?? ""}
               width={600}

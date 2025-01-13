@@ -46,7 +46,6 @@ export const Image: FC<
   return (
     <NextImage
       {...rest}
-      priority={(typeof src !== "string" && preload) || rest.priority}
       placeholder={!preload ? "blur" : undefined}
       blurDataURL={
         typeof src === "string" && !preload

@@ -3,7 +3,7 @@
 import { Image } from "components/image";
 import { Link } from "components/link";
 import clsx from "clsx";
-import { FC, useCallback, useState } from "react";
+import { FC, useState } from "react";
 import { FaGithub } from "react-icons/fa";
 import { LinkIcon } from "@heroicons/react/24/solid";
 import { ScrollGallery } from "@/utils/scroll-gallery";
@@ -92,6 +92,7 @@ export const PortfolioPreview: FC<PortfolioPreviewProps> = ({}) => {
                   width={400}
                   height={200}
                   maxWidth={320}
+                  loading="lazy"
                   className="rounded-t-lg object-cover object-center [mask-image:linear-gradient(180deg,#fff_16.35%,rgb(255_255_255_/_0%)_91.66%)]"
                 />
               </figure>

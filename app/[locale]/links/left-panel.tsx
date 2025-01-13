@@ -15,7 +15,6 @@ const LeftPanel = () => {
       <div>
         <div>
           <Image
-            priority
             loading="eager"
             alt="avatar"
             placeholder="blur"
